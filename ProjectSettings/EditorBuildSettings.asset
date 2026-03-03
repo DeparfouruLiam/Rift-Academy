@@ -6,8 +6,26 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/AcademieMenu.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/ChoixNiveau.unity
+    guid: 858dfd2f175ebd947be77ebf6150c9e2
+  - enabled: 1
+    path: Assets/Scenes/Combat.unity
+    guid: a11bd1d33ab3d3b45a22ce31878f948d
+  - enabled: 1
+    path: Assets/Scenes/GachaMenu.unity
+    guid: 130537a5473191b43bc088501e3f792a
+  - enabled: 1
+    path: Assets/Scenes/Idle.unity
+    guid: 114db70b5e3ca5f46801701c49464208
+  - enabled: 1
+    path: Assets/Scenes/InventaireMenu.unity
+    guid: 29be27c035e691243bda8168ad11b64f
+  - enabled: 1
+    path: Assets/Scenes/MagasinMenu.unity
+    guid: d1c25851a28207a47b8df698b99b6887
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
