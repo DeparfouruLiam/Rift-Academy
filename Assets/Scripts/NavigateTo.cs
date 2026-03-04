@@ -5,11 +5,11 @@ using UnityEngine.UI;
 
 public class NavigateTo : MonoBehaviour
 {
-    [SerializeField] string aled;
+    [SerializeField] string TargetScene;
     
     public void NavigateClick()
     {
         gameObject.GetComponent<Image>().color = Color.aquamarine;
-        SceneManager.LoadScene(aled);
+        SceneManager.LoadScene(TargetScene);
     }
 }
