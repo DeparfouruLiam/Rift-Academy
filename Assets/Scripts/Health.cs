@@ -2,5 +2,5 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
-    [SerializeField] public int HP = 10;
+    [SerializeField] public int HP = 1;
 }
