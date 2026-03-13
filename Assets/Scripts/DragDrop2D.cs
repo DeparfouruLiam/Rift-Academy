@@ -6,14 +6,17 @@ public class DragDrop2D : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDr
     private Vector3 offset;
     Collider2D col;
     public string destinationTag = "DropZone";
+    private Vector3 originalPosition;
 
     private void Awake()
     {
         col = GetComponent<Collider2D>();
+
     }
 
     public void OnBeginDrag(PointerEventData eventData)
     {
+        originalPosition = transform.position;
         offset = transform.position - GetWorldPosition(eventData.position);
     }
 
@@ -36,6 +39,10 @@ public class DragDrop2D : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDr
                 transform.position = hitInfo.transform.position + new Vector3(0, 0, -0.01f);
             }
         }
+         else
+            {
+              transform.position = originalPosition;
+            }
 
         col.enabled = true;
     }
