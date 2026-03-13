@@ -850,7 +850,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   target: {fileID: 560845940}
   Enemy: {fileID: 7604670548259980914, guid: 212999a99d06a79459bcb3df55ebed45, type: 3}
-  Seconds: 0.5
+  Seconds: 3
+  numberOfEnemy: 10
+  pvMultiplicator: 1
 --- !u!1 &401598065
 GameObject:
   m_ObjectHideFlags: 0
@@ -4485,7 +4487,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DragDrop2D
   destinationTag: DropZone
-  trashTag: Trash
 --- !u!58 &1464819285
 CircleCollider2D:
   m_ObjectHideFlags: 0
