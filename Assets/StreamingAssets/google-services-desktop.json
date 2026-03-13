@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "684657109715",
+    "project_id": "rift-academy",
+    "storage_bucket": "rift-academy.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:684657109715:android:0005a0cd1deb8af5bc4226",
+        "android_client_info": {
+          "package_name": "com.FFT.RiftAcademy"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKutlLhoiSdkSHbw5KByDSsXK2UEBQL-s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
