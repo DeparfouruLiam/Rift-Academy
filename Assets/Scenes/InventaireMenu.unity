@@ -3265,6 +3265,90 @@ PrefabInstance:
       propertyPath: 'Panels.Array.data[4]'
       value: 
       objectReference: {fileID: 1960342498}
+    - target: {fileID: 8254499529161837059, guid: 0669c7322365e4b08b67722cb9d66abc, type: 3}
+      propertyPath: itemIcons.Array.size
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8254499529161837059, guid: 0669c7322365e4b08b67722cb9d66abc, type: 3}
+      propertyPath: 'itemIcons.Array.data[0]'
+      value: 
+      objectReference: {fileID: 5874003173190484086, guid: 051245946de6c48bfafee3115ce1430a, type: 3}
+    - target: {fileID: 8254499529161837059, guid: 0669c7322365e4b08b67722cb9d66abc, type: 3}
+      propertyPath: 'itemIcons.Array.data[1]'
+      value: 
+      objectReference: {fileID: -4219087213512679143, guid: 171730f776a36495ea03a17fe46c9894, type: 3}
+    - target: {fileID: 8254499529161837059, guid: 0669c7322365e4b08b67722cb9d66abc, type: 3}
+      propertyPath: 'itemIcons.Array.data[2]'
+      value: 
+      objectReference: {fileID: -7908801542862957348, guid: ec45dd335c9164bbbbbe5792dfb27c2a, type: 3}
+    - target: {fileID: 8254499529161837059, guid: 0669c7322365e4b08b67722cb9d66abc, type: 3}
+      propertyPath: 'itemIcons.Array.data[3]'
+      value: 
+      objectReference: {fileID: -5376690609939675427, guid: 205da0455e201464dbc1a7bb2bad2e81, type: 3}
+    - target: {fileID: 8254499529161837059, guid: 0669c7322365e4b08b67722cb9d66abc, type: 3}
+      propertyPath: 'itemIcons.Array.data[4]'
+      value: 
+      objectReference: {fileID: -9198760153553542399, guid: aaf25808fc595411cabb9e588e4e8097, type: 3}
+    - target: {fileID: 8254499529161837059, guid: 0669c7322365e4b08b67722cb9d66abc, type: 3}
+      propertyPath: 'itemIcons.Array.data[5]'
+      value: 
+      objectReference: {fileID: 1059042247270875816, guid: 7bc1f29418b394b80bf9fb846eb7efe7, type: 3}
+    - target: {fileID: 8254499529161837059, guid: 0669c7322365e4b08b67722cb9d66abc, type: 3}
+      propertyPath: 'itemIcons.Array.data[6]'
+      value: 
+      objectReference: {fileID: 7268451223277185605, guid: 1f580a7d66eb549158d26eb31725e6ff, type: 3}
+    - target: {fileID: 8254499529161837059, guid: 0669c7322365e4b08b67722cb9d66abc, type: 3}
+      propertyPath: 'itemIcons.Array.data[7]'
+      value: 
+      objectReference: {fileID: -7178570665021076702, guid: bb2b39239b4ff46e0893f21b3c0b9cca, type: 3}
+    - target: {fileID: 8254499529161837059, guid: 0669c7322365e4b08b67722cb9d66abc, type: 3}
+      propertyPath: 'itemIcons.Array.data[8]'
+      value: 
+      objectReference: {fileID: -8556422322167946608, guid: 16e75e5af49e144d9a989bba03fde2cc, type: 3}
+    - target: {fileID: 8254499529161837059, guid: 0669c7322365e4b08b67722cb9d66abc, type: 3}
+      propertyPath: 'itemIcons.Array.data[9]'
+      value: 
+      objectReference: {fileID: -2028199089966784016, guid: 16f1fae9252b34cdda159027aaea115b, type: 3}
+    - target: {fileID: 8254499529161837059, guid: 0669c7322365e4b08b67722cb9d66abc, type: 3}
+      propertyPath: 'itemIcons.Array.data[10]'
+      value: 
+      objectReference: {fileID: 4986358825954504971, guid: 16d829d0aac314c04bf68f19f5a7e5dc, type: 3}
+    - target: {fileID: 8254499529161837059, guid: 0669c7322365e4b08b67722cb9d66abc, type: 3}
+      propertyPath: 'itemIcons.Array.data[11]'
+      value: 
+      objectReference: {fileID: 6753769383792495480, guid: d15b8ef53241f420db3e9bb77b2215df, type: 3}
+    - target: {fileID: 8254499529161837059, guid: 0669c7322365e4b08b67722cb9d66abc, type: 3}
+      propertyPath: 'itemIcons.Array.data[12]'
+      value: 
+      objectReference: {fileID: 5397505127577370490, guid: 81d250f10a92a414abf1517b26baf232, type: 3}
+    - target: {fileID: 8254499529161837059, guid: 0669c7322365e4b08b67722cb9d66abc, type: 3}
+      propertyPath: 'itemIcons.Array.data[13]'
+      value: 
+      objectReference: {fileID: 1596797798700358981, guid: cd264ec61471f4fd7bb5613432754b2f, type: 3}
+    - target: {fileID: 8254499529161837059, guid: 0669c7322365e4b08b67722cb9d66abc, type: 3}
+      propertyPath: 'itemIcons.Array.data[14]'
+      value: 
+      objectReference: {fileID: 1098212416455242602, guid: b57b4889157f145ab9f0bf870e4a7617, type: 3}
+    - target: {fileID: 8254499529161837059, guid: 0669c7322365e4b08b67722cb9d66abc, type: 3}
+      propertyPath: 'itemIcons.Array.data[15]'
+      value: 
+      objectReference: {fileID: -999874523437139740, guid: cabf15a6f047c47c786970b105a34c8c, type: 3}
+    - target: {fileID: 8254499529161837059, guid: 0669c7322365e4b08b67722cb9d66abc, type: 3}
+      propertyPath: 'itemIcons.Array.data[16]'
+      value: 
+      objectReference: {fileID: 3590690878342604797, guid: 70e5b7ab3a16c440d842f99eff0b2321, type: 3}
+    - target: {fileID: 8254499529161837059, guid: 0669c7322365e4b08b67722cb9d66abc, type: 3}
+      propertyPath: 'itemIcons.Array.data[17]'
+      value: 
+      objectReference: {fileID: 6245410536045139650, guid: 65112e20d615c4696a42724069942dfb, type: 3}
+    - target: {fileID: 8254499529161837059, guid: 0669c7322365e4b08b67722cb9d66abc, type: 3}
+      propertyPath: 'itemIcons.Array.data[18]'
+      value: 
+      objectReference: {fileID: 2824529721459885005, guid: 0383d0de0a66d43acb90895cf13fb0d0, type: 3}
+    - target: {fileID: 8254499529161837059, guid: 0669c7322365e4b08b67722cb9d66abc, type: 3}
+      propertyPath: 'itemIcons.Array.data[19]'
+      value: 
+      objectReference: {fileID: 9208463649210077897, guid: 229542549a2c7416fa524355892c541d, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
