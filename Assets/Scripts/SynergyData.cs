@@ -1,20 +1,36 @@
 using UnityEngine;
+using System.Collections.Generic;
 
-public enum Dimension { Cyberpunk, Sylvestre, Atlantis, DarkFantasy, AcademieMagie }
-public enum Classe { Combattant, Mage, Range, Tank, Assassin, Support }
+[CreateAssetMenu(fileName = "Synergy", menuName = "Gacha/Synergy")]
+public class SynergyData : ScriptableObject
+{
+    public enum SynergyType { Dimension, Classe }
+
+    [Header("Dimension ou Classe")]
+    public string dimensionOrClassName;
+
+    [Header("Type")]
+    public SynergyType synergyType;
+
+    [Header("Paliers (5 niveaux)")]
+    public SynergyTier[] tiers;
+
+    private void OnEnable()
+    {
+        if (tiers == null || tiers.Length != 5)
+        {
+            tiers = new SynergyTier[5];
+            for (int i = 0; i < 5; i++)
+            {
+                tiers[i] = new SynergyTier();
+            }
+        }
+    }
+}
 
 [System.Serializable]
-public class SynergyBonus
+public class SynergyTier
 {
-    public float multiDegats = 1f;
-    public float bonusDefense = 0f;
-    public float multiMana = 1f;
-    public bool upgradeUltime = false;
-
-    public SynergyBonus() {
-        multiDegats = 1f;
-        bonusDefense = 0f;
-        multiMana = 1f;
-        upgradeUltime = false;
-    }
+    public SynergyBonus bonus = new SynergyBonus();
+    public List<string> abilities = new List<string>();
 }

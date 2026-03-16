@@ -3,9 +3,12 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "NouveauPerso", menuName = "Gacha/Character Data")]
 public class CharacterData : ScriptableObject
 {
+    [Header("Identification")]
+    public string characterName;
+
     [Header("Synergies")]
-    public Dimension dimension;
-    public Classe classe;
+    public string dimension;
+    public string classe;
 
     [Header("Stats de Combat")]
     public float pvMax = 100f;
@@ -13,7 +16,7 @@ public class CharacterData : ScriptableObject
     public float degats = 20f;
     public float penetration = 0f;
     public float vitesseAttaque = 1f;
-    public float manaStat = 1f; // Ton multiplicateur de temps d'attente
+    public float manaStat = 1f; 
     
     [Header("Critiques")]
     [Range(0, 1)] public float chanceCritique = 0.1f;
