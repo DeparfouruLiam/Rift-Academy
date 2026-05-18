@@ -10,7 +10,7 @@ public class SlotUI : MonoBehaviour
     public void Setup(ItemScript item, Sprite sprite)
 {
     icon.sprite = sprite;
-    quantity.text = item.quantity.ToString();
+    quantity.text ="x" +item.quantity.ToString();
     quantity.gameObject.SetActive(item.quantity > 1);
 }
 }
