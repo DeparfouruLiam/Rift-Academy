@@ -20,6 +20,9 @@ public class LoginButton : MonoBehaviour
 
     public async void LoginClick()
     {
+        Debug.Log(auth);
+            Debug.Log(Email.text);
+            Debug.Log(Password.text);
         var result = await auth.SignInWithEmailAndPasswordAsync(Email.text, Password.text);
 
     FirebaseUser user = result.User;
