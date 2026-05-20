@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7e780320-f487-4f88-acd8-1e9563a6eb46" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/playScripts/Ultimate.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/playScripts/Ultimate.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/playScripts/WaveManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/playScripts/WaveManager.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Anims/AttackEnemy.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Anims/AttackEnemy.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Anims/AttackNoir.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Anims/AttackNoir.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Anims/Ultimate.anim.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Anims/Circle 1.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Anims/Circle 1.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Anims/Circle.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Anims/Circle.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Anims/IdleEnemy.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Anims/Ultimate.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Anims/IdleEnemy.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/playScripts.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Anims/IdleNoir.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Anims/IdleNoir.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Triangle.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Triangle.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Combat.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Combat.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Clic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/playScripts/Clic.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Clic.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/playScripts/Clic.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DeathZone.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/playScripts/DeathZone.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DeathZone.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/playScripts/DeathZone.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DragDrop2D.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/playScripts/DragDrop2D.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DragDrop2D.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/playScripts/DragDrop2D.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemyMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/playScripts/EnemyMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemyMovement.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/playScripts/EnemyMovement.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Health.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/playScripts/Health.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Health.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/playScripts/Health.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HeroAttack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/playScripts/HeroAttack.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HeroAttack.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/playScripts/HeroAttack.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HeroHitbox.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/playScripts/HeroHitbox.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HeroHitbox.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/playScripts/HeroHitbox.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NavigateTo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/playScripts/NavigateTo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NavigateTo.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/playScripts/NavigateTo.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/playScripts/Spawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spawner.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/playScripts/Spawner.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/testclic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/playScripts/testclic.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/testclic.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/playScripts/testclic.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Recovery/0 (2).unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Recovery/0 (2).unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Recovery/0 (2).unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Recovery/0 (2).unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Recovery/0 (3).unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Recovery/0 (3).unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Recovery/0 (3).unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Recovery/0 (3).unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/GvhProjectSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GvhProjectSettings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 7
+}]]></component>
+  <component name="ProjectId" id="3Dyfjll6Pwnc06xBPd5POVpmJQL" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-b26f3e71634d-JavaScript-PS-251.26094.133" />
+        <option value="bundled-php-predefined-a98d8de5180a-c5828cf854d9-com.jetbrains.php.sharedIndexes-PS-251.26094.133" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7e780320-f487-4f88-acd8-1e9563a6eb46" name="Changes" comment="" />
+      <created>1779259370512</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1779259370512</updated>
+      <workItem from="1779259375141" duration="7000" />
+    </task>
+    <servers />
+  </component>
+</project>
