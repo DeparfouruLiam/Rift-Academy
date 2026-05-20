@@ -5,15 +5,26 @@ public class HeroAttack : MonoBehaviour
 {
     [SerializeField] float AttackSpeed;
 
+    public bool ultimateUp = false;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     IEnumerator Start()
     {
         Animator anim = gameObject.GetComponent<Animator>();
         while (true)
         {
-            yield return new WaitForSeconds(AttackSpeed);
-            anim.SetTrigger("Attack");
-            Debug.Log("AAAAAAAAAAAA");
+            if (gameObject.GetComponent<DragDrop2D>().onCase){
+            if (ultimateUp)
+            {
+                anim.SetTrigger("Ultimate");
+                ultimateUp = false;
+            }
+            else
+            {
+                anim.SetTrigger("Attack");
+            }
+        }
+        yield return new WaitForSeconds(AttackSpeed);
         }
     }
 
