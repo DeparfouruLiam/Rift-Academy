@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9eb978d1e8b80814abf38f06353867c8, type: 3}
-  m_Name: ClasseMage
+  m_Name: caca
   m_EditorClassIdentifier: Assembly-CSharp::SynergyData
-  dimensionOrClassName: Mage
-  synergyType: 1
+  dimensionOrClassName: caca
+  synergyType: 0
   tiers:
   - bonus:
       multiPv: 1
@@ -28,7 +28,7 @@ MonoBehaviour:
       bonusDegats: 0
       bonusPenetration: 0
       bonusVitesseAttaque: 0
-      bonusMana: 100
+      bonusMana: 0
       bonusChanceCritique: 0
       bonusDegatsCritique: 0
       upgradeUltime: 0
@@ -44,7 +44,7 @@ MonoBehaviour:
       bonusPv: 0
       bonusDefense: 0
       bonusDegats: 0
-      bonusPenetration: 100
+      bonusPenetration: 0
       bonusVitesseAttaque: 0
       bonusMana: 0
       bonusChanceCritique: 0

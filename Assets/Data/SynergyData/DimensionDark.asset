@@ -25,14 +25,15 @@ MonoBehaviour:
       multiDegatsCritique: 1
       bonusPv: 0
       bonusDefense: 0
-      bonusDegats: 0
+      bonusDegats: 200
       bonusPenetration: 0
       bonusVitesseAttaque: 0
       bonusMana: 0
       bonusChanceCritique: 0
       bonusDegatsCritique: 0
       upgradeUltime: 0
-    abilities: []
+    abilities:
+    - 
   - bonus:
       multiPv: 1
       multiDefense: 1
@@ -43,7 +44,7 @@ MonoBehaviour:
       multiDegatsCritique: 1
       bonusPv: 0
       bonusDefense: 0
-      bonusDegats: 0
+      bonusDegats: 100
       bonusPenetration: 0
       bonusVitesseAttaque: 0
       bonusMana: 0
