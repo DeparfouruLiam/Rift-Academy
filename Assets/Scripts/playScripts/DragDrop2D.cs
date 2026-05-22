@@ -9,6 +9,7 @@ public class DragDrop2D : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDr
     private Vector3 originalPosition;
 
     public bool onCase; 
+    public bool wasOnCase;
 
     private void Awake()
     {
@@ -18,6 +19,10 @@ public class DragDrop2D : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDr
 
     public void OnBeginDrag(PointerEventData eventData)
     {
+        if (onCase)
+        {
+            wasOnCase = true;
+        }
         onCase = false;
         originalPosition = transform.position;
         offset = transform.position - GetWorldPosition(eventData.position);
@@ -39,15 +44,26 @@ public class DragDrop2D : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDr
         {
             if (hitInfo.transform.tag == destinationTag)
             {
+                Debug.Log("Ntm");
                 transform.position = hitInfo.transform.position + new Vector3(0, 0, -0.01f);
                 onCase = true;
 
+            }
+            else
+            {
+              transform.position = originalPosition;
+              if(wasOnCase){
+                onCase = true;
+              }
             }
         
         }
          else
             {
               transform.position = originalPosition;
+              if(wasOnCase){
+                onCase = true;
+              }
             }
 
         col.enabled = true;
