@@ -67,5 +67,5 @@
         "*.sln": "*.csproj",
         "*.slnx": "*.csproj"
     },
-    "dotnet.defaultSolution": "Rift Academy.slnx"
+    "dotnet.defaultSolution": "Rift-Academy.slnx"
 }
