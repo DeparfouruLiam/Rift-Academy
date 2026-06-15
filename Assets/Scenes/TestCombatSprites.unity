@@ -6680,6 +6680,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DragDrop2D
   destinationTag: DropZone
+  onCase: 0
+  wasOnCase: 0
 --- !u!95 &562106021
 Animator:
   serializedVersion: 7
@@ -6715,6 +6717,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   AttackSpeed: 1
+  ultimateUp: 0
 --- !u!212 &562106023
 SpriteRenderer:
   serializedVersion: 2
@@ -8180,7 +8183,7 @@ Transform:
   m_GameObject: {fileID: 953296256}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.94, y: 0, z: -10}
+  m_LocalPosition: {x: -2, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8218,6 +8221,9 @@ MonoBehaviour:
   target: {fileID: 1439049631}
   Enemy: {fileID: 7604670548259980914, guid: 212999a99d06a79459bcb3df55ebed45, type: 3}
   Seconds: 0.5
+  numberOfEnemy: 0
+  pvMultiplicator: 0
+  winScreen: {fileID: 0}
 --- !u!4 &973866330
 Transform:
   m_ObjectHideFlags: 0
@@ -8418,6 +8424,9 @@ MonoBehaviour:
   target: {fileID: 1212213216}
   Enemy: {fileID: 7604670548259980914, guid: 212999a99d06a79459bcb3df55ebed45, type: 3}
   Seconds: 0.5
+  numberOfEnemy: 0
+  pvMultiplicator: 0
+  winScreen: {fileID: 0}
 --- !u!4 &984893138
 Transform:
   m_ObjectHideFlags: 0
@@ -8467,6 +8476,9 @@ MonoBehaviour:
   target: {fileID: 1715765620}
   Enemy: {fileID: 7604670548259980914, guid: 212999a99d06a79459bcb3df55ebed45, type: 3}
   Seconds: 0.5
+  numberOfEnemy: 0
+  pvMultiplicator: 0
+  winScreen: {fileID: 0}
 --- !u!4 &1009877067
 Transform:
   m_ObjectHideFlags: 0
@@ -9182,6 +9194,9 @@ MonoBehaviour:
   target: {fileID: 1614819002}
   Enemy: {fileID: 7604670548259980914, guid: 212999a99d06a79459bcb3df55ebed45, type: 3}
   Seconds: 0.5
+  numberOfEnemy: 0
+  pvMultiplicator: 0
+  winScreen: {fileID: 0}
 --- !u!4 &1171382027
 Transform:
   m_ObjectHideFlags: 0
