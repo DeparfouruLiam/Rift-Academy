@@ -13,16 +13,12 @@ public class HeroHitbox : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        collision.GetComponent<Health>().HP -= Damage;
-        if (collision.GetComponent<Health>().HP <= 0)
-        {
-            Destroy(collision.gameObject);
-        }
+        collision.GetComponent<Health>().IsHit(Damage);
         if (ProjectileScript!=null)
         {
             if (ProjectileScript.Pierce<1)
             {
-                Destroy(gameObject);
+                ProjectileScript.LastHit();
             }
             ProjectileScript.Pierce -=1;
         }

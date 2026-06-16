@@ -185,3 +185,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   HP: 10
+  HitEffect: {fileID: 6406750728465449608, guid: 5e23c7807394f3d41926874b7e4a6dd0, type: 3}
