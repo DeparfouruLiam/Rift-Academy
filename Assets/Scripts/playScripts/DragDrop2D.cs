@@ -10,6 +10,7 @@ public class DragDrop2D : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDr
 
     public bool onCase; 
     public bool wasOnCase;
+    public int OrderLayer;
 
     private void Awake()
     {
@@ -46,6 +47,8 @@ public class DragDrop2D : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDr
             {
                 Debug.Log("Ntm");
                 transform.position = hitInfo.transform.position + new Vector3(0, 0, -0.01f);
+                OrderLayer = 1500-((int)gameObject.transform.position.y+2)*100;
+                GetComponent<SpriteRenderer>().sortingOrder = OrderLayer;
                 onCase = true;
 
             }

@@ -1,13 +1,26 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class DebuffHitbox : MonoBehaviour
 {
-    [SerializeField] LayerMask EnemyLayer;
-    void OnTriggerEnter2D(Collider2D collision)
+    [SerializeField] private LayerMask enemyLayer;
+    [SerializeField] private float SlowLevel;
+
+    private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.gameObject.layer == EnemyLayer)
+        if ((enemyLayer.value & (1 << collision.gameObject.layer)) == 0)
+            return;
+
+        var enemy = collision.GetComponent<EnemyMovement>();
+        if (enemy == null)
+            return;
+
+        if (enemy.SlowEffect > SlowLevel)
         {
-            Debug.Log("Lent ta mère");
+            var DebuffValues = GetComponentInParent<DebuffScript>();
+            enemy.SlowDebuff(SlowLevel, DebuffValues.DebuffDuration - (Time.time - DebuffValues.DebuffStartTime));
         }
     }
 }
