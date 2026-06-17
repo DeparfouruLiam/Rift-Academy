@@ -5,6 +5,7 @@ using UnityEngine;
 public class BuffScript : MonoBehaviour
 {
     [SerializeField] float BuffDuration;
+    [SerializeField] GameObject buffEffect;
     private Animator anim;
 
     void Start()
@@ -21,7 +22,9 @@ public class BuffScript : MonoBehaviour
     IEnumerator BuffCoroutine() {
         anim.SetBool("UltBuff",true);
         GetComponent<SpriteRenderer>().color = new Color (1f,1f,0.26f,1);
+        buffEffect.SetActive(true);
         yield return new WaitForSeconds(BuffDuration);
+        buffEffect.SetActive(false);
         GetComponent<SpriteRenderer>().color = new Color (1f,1f,1f,1);
         anim.SetBool("UltBuff",false);
     }
