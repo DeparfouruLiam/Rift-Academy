@@ -512,7 +512,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a0ed6638c87bd9429e4651625307ec9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NavigateTo
-  TargetScene: Level1
+  TargetScene: Level 1
 --- !u!114 &316760554
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1856,7 +1856,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a0ed6638c87bd9429e4651625307ec9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NavigateTo
-  TargetScene: Level2
+  TargetScene: Level 2
 --- !u!114 &1218417159
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2346,7 +2346,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a0ed6638c87bd9429e4651625307ec9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NavigateTo
-  TargetScene: Level4
+  TargetScene: Level 4
 --- !u!114 &1516570771
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2622,7 +2622,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a0ed6638c87bd9429e4651625307ec9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NavigateTo
-  TargetScene: Level3
+  TargetScene: Level 3
 --- !u!114 &1807900920
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3140,7 +3140,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a0ed6638c87bd9429e4651625307ec9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NavigateTo
-  TargetScene: Level5
+  TargetScene: Level 5
 --- !u!114 &2056684040
 MonoBehaviour:
   m_ObjectHideFlags: 0
