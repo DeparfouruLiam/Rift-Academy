@@ -6,14 +6,26 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Level/Level1.unity
+    guid: e5f8dde558803fd47a115ea73156be8f
+  - enabled: 1
+    path: Assets/Scenes/Level/Level2.unity
+    guid: a11bd1d33ab3d3b45a22ce31878f948d
+  - enabled: 1
+    path: Assets/Scenes/Level/Level3.unity
+    guid: a49062901679cf146af8ae52a53a77d9
+  - enabled: 1
+    path: Assets/Scenes/Level/Level4.unity
+    guid: 8a0002d27d744ed48a2d4943249311f0
+  - enabled: 1
+    path: Assets/Scenes/Level/Level5.unity
+    guid: cd9c83901b4dc1e42947c647a2824767
+  - enabled: 1
     path: Assets/Scenes/AcademieMenu.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
     path: Assets/Scenes/ChoixNiveau.unity
     guid: 858dfd2f175ebd947be77ebf6150c9e2
-  - enabled: 1
-    path: Assets/Scenes/Combat.unity
-    guid: a11bd1d33ab3d3b45a22ce31878f948d
   - enabled: 1
     path: Assets/Scenes/GachaMenu.unity
     guid: 130537a5473191b43bc088501e3f792a
@@ -29,6 +41,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Login Register.unity
     guid: a9176fe4f47aff644a7b59a634b4ee5b
+  - enabled: 1
+    path: Assets/Scenes/Select.unity
+    guid: d11918992c73a1e4ba05126cc0fdf36b
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

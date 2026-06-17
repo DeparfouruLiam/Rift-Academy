@@ -19,7 +19,7 @@ public class WaveManager : MonoBehaviour
 
     [Header("Références Spatiales")]
     [SerializeField] private Transform[] spawnPoints;
-    [SerializeField] private Transform targetBase;
+    [SerializeField] private Vector3 targetBase;
 
 
     
