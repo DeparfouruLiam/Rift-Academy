@@ -3,7 +3,8 @@ using UnityEngine;
 
 public class SpawnProjectile : MonoBehaviour
 {
-    [SerializeField] GameObject PresetBg;
+    [SerializeField] GameObject PresetProjo;
+    [SerializeField] GameObject PresetProjoUlt;
     [SerializeField] float SpawnOffset;
 
     // Update is called once per frame
@@ -11,6 +12,13 @@ public class SpawnProjectile : MonoBehaviour
     {
         Vector3 pos = gameObject.transform.position;
         pos.x += SpawnOffset;
-        Instantiate(PresetBg,pos,Quaternion.identity);
+        Instantiate(PresetProjo,pos,Quaternion.identity);
+    }
+
+    public void SpawnUlt()
+    {
+        Vector3 pos = gameObject.transform.position;
+        pos.x += SpawnOffset;
+        Instantiate(PresetProjoUlt,pos,Quaternion.identity);
     }
 }
