@@ -13,7 +13,11 @@ public class CharacterObject : MonoBehaviour
     public float currentVitesseAttaque;
     public float currentManaStat;
     public float currentChanceCritique;
-    public float currentDegatsCritique; 
+    public float currentDegatsCritique;
+    
+    // Store synergy bonus to ensure it persists
+    private SynergyBonus currentSynergyBonus = new SynergyBonus();
+    private bool isInitialized = false;
 
     private void Start()
     {
@@ -22,7 +26,7 @@ public class CharacterObject : MonoBehaviour
 
     public void Initialize()
     {
-        if (data == null) return;
+        if (data == null || isInitialized) return;
 
         currentPv = data.pvMax;
         currentDefense = data.defense;
@@ -35,22 +39,34 @@ public class CharacterObject : MonoBehaviour
 
         if (GetComponent<SpriteRenderer>() != null)
             GetComponent<SpriteRenderer>().sprite = data.artwork;
+            
+        isInitialized = true;
     }
 
     internal void UpdateStats(SynergyBonus synergyBonus)
     {
         if (data == null) return;
+        
+        // Store synergy bonus for persistence
+        currentSynergyBonus = synergyBonus;
+        ApplyStatsWithSynergy();
+    }
+    
+    /// <summary>Apply stats with current synergy bonus. Called after Initialize() to ensure proper application.</summary>
+    private void ApplyStatsWithSynergy()
+    {
+        if (data == null) return;
 
-        currentPv = (data.pvMax * synergyBonus.multiPv) + synergyBonus.bonusPv;
-        currentDefense = (data.defense * synergyBonus.multiDefense) + synergyBonus.bonusDefense;
-        currentDegats = (data.degats * synergyBonus.multiDegats) + synergyBonus.bonusDegats;
-        currentPenetration = (data.penetration * synergyBonus.multiPenetration) + synergyBonus.bonusPenetration;
-        currentVitesseAttaque = (data.vitesseAttaque * synergyBonus.multiVitesseAttaque) + synergyBonus.bonusVitesseAttaque;
-        currentManaStat = (data.manaStat * synergyBonus.multiMana) + synergyBonus.bonusMana;
-        currentChanceCritique = Mathf.Clamp(data.chanceCritique + synergyBonus.bonusChanceCritique, 0f, 1f);
-        currentDegatsCritique = (data.degatsCritique * synergyBonus.multiDegatsCritique) + synergyBonus.bonusDegatsCritique;
+        currentPv = (data.pvMax * currentSynergyBonus.multiPv) + currentSynergyBonus.bonusPv;
+        currentDefense = (data.defense * currentSynergyBonus.multiDefense) + currentSynergyBonus.bonusDefense;
+        currentDegats = (data.degats * currentSynergyBonus.multiDegats) + currentSynergyBonus.bonusDegats;
+        currentPenetration = (data.penetration * currentSynergyBonus.multiPenetration) + currentSynergyBonus.bonusPenetration;
+        currentVitesseAttaque = (data.vitesseAttaque * currentSynergyBonus.multiVitesseAttaque) + currentSynergyBonus.bonusVitesseAttaque;
+        currentManaStat = (data.manaStat * currentSynergyBonus.multiMana) + currentSynergyBonus.bonusMana;
+        currentChanceCritique = Mathf.Clamp(data.chanceCritique + currentSynergyBonus.bonusChanceCritique, 0f, 1f);
+        currentDegatsCritique = (data.degatsCritique * currentSynergyBonus.multiDegatsCritique) + currentSynergyBonus.bonusDegatsCritique;
 
-        if (synergyBonus.upgradeUltime)
+        if (currentSynergyBonus.upgradeUltime)
         {
             
         }
