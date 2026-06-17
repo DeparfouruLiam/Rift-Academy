@@ -3,31 +3,45 @@ using UnityEngine.UI;
 
 public class AffichageEquipeCombat : MonoBehaviour
 {
-    [SerializeField] private DataEquipe dataGlobale; // Glisse le MÊME fichier "SauvegardeEquipe"
-    [SerializeField] private Image[] boutonsAchatCombat; // Tes 5 boutons d'UI du combat
+    [SerializeField] private DataEquipe dataGlobale; 
+    [SerializeField] private Image[] boutonsAchatCombat; 
+    
+    [Header("Où faire apparaître les héros ?")]
+    public Transform pointDApparition; // L'endroit où le héros spawn avant qu'on le drag
 
     void Start()
     {
-        if (dataGlobale == null)
-        {
-            Debug.LogError("Il manque le fichier de sauvegarde sur " + gameObject.name);
-            return;
-        }
-
-        // On applique les sprites sauvegardés sur les boutons du niveau
         for (int i = 0; i < boutonsAchatCombat.Length; i++)
         {
-            if (dataGlobale.herosChoisis[i] != null)
+            GameObject prefabSauvegarde = dataGlobale.herosChoisis[i];
+
+            if (prefabSauvegarde != null)
             {
-                boutonsAchatCombat[i].sprite = dataGlobale.herosChoisis[i];
-                boutonsAchatCombat[i].color = Color.white;
+                SpriteRenderer spriteDuPrefab = prefabSauvegarde.GetComponent<SpriteRenderer>();
+
+                if (spriteDuPrefab != null)
+                {
+                    boutonsAchatCombat[i].sprite = spriteDuPrefab.sprite;
+                    boutonsAchatCombat[i].color = Color.white;
+                }
+                
                 boutonsAchatCombat[i].gameObject.SetActive(true);
             }
             else
             {
-                // Si le slot était vide, on cache le bouton pour ce combat
                 boutonsAchatCombat[i].gameObject.SetActive(false);
             }
+        }
+    }
+
+    public void InvoquerHero(int indexDuBouton)
+    {
+        GameObject prefabAInvoquer = dataGlobale.herosChoisis[indexDuBouton];
+
+        if (prefabAInvoquer != null)
+        {
+            Instantiate(prefabAInvoquer, pointDApparition.position, Quaternion.identity);
+            Debug.Log("Héros invoqué ! Tu peux maintenant le Drag & Drop.");
         }
     }
 }
