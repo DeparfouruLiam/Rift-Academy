@@ -1,31 +1,16 @@
 fileFormatVersion: 2
-guid: a4b038b95777cd84ba682f8d87156489
+guid: 1a4566b5e0dac1f4e9be611e5db31d06
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5299453679644151353
-    second: WitchSheet_0
+      213: -8369227728769284621
+    second: Speens_0
   - first:
-      213: -67345107448040208
-    second: WitchSheet_1
+      213: 3821298526622604333
+    second: Speens_1
   - first:
-      213: 5764015266162332892
-    second: WitchSheet_2
-  - first:
-      213: -1463790082984395072
-    second: WitchSheet_3
-  - first:
-      213: 5219576447616772891
-    second: WitchSheet_4
-  - first:
-      213: -865882041363817349
-    second: WitchSheet_5
-  - first:
-      213: 2777615450927010111
-    second: WitchSheet_6
-  - first:
-      213: 8535711661753234777
-    second: WitchSheet_7
+      213: 4303743840217290357
+    second: Speens_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -58,7 +43,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -134,89 +119,133 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: WitchSheet_0
+      name: Speens_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1000
+        width: 2000
+        height: 1000
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f58b5609b78adb80800000000000000
+      internalID: -8369227728769284621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speens_1
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1000
+        width: 2000
+        height: 1000
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2c501c83caf70530800000000000000
+      internalID: 3821298526622604333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speens_2
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 1000
+        width: 2000
+        height: 1000
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5765d607838f9bb30800000000000000
+      internalID: 4303743840217290357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speens_3
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1000
+        width: 2000
         height: 1000
-      alignment: 9
-      pivot: {x: 0.45, y: 0.2}
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 93e83de3b017b8940800000000000000
-      internalID: 5299453679644151353
+      spriteID: 92dc44d215adf5746b7b20648d04ede0
+      internalID: 1916312706
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WitchSheet_1
-      rect:
-        serializedVersion: 2
-        x: 1000
-        y: 0
-        width: 1000
-        height: 1000
-      alignment: 9
-      pivot: {x: 0.45, y: 0.2}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0f4f2394bfdb01ff0800000000000000
-      internalID: -67345107448040208
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WitchSheet_2
+      name: Speens_4
       rect:
         serializedVersion: 2
         x: 2000
         y: 0
-        width: 1000
+        width: 2000
         height: 1000
-      alignment: 9
-      pivot: {x: 0.45, y: 0.2}
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: cd4d8837855edff40800000000000000
-      internalID: 5764015266162332892
+      spriteID: 7b0d8dac6fb1bcf49855ca98ffa71f34
+      internalID: 692292911
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WitchSheet_3
+      name: Speens_5
       rect:
         serializedVersion: 2
-        x: 3000
+        x: 4000
         y: 0
-        width: 1000
+        width: 2000
         height: 1000
-      alignment: 9
-      pivot: {x: 0.45, y: 0.2}
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 0ceb9fdcca29fabe0800000000000000
-      internalID: -1463790082984395072
+      spriteID: 8875eb7ff36d505458ea6c8ee4cca70d
+      internalID: 12719960
       vertices: []
       indices: 
       edges: []
@@ -225,7 +254,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: a5b8747cc60dc1441b506c08789bc455
+    spriteID: 222ccfc9c5dcf884889dd17dee124887
     internalID: 0
     vertices: []
     indices: 
@@ -235,12 +264,14 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":1000.0,"y":1000.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":2000.0,"y":1000.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      WitchSheet_0: 5299453679644151353
-      WitchSheet_1: -67345107448040208
-      WitchSheet_2: 5764015266162332892
-      WitchSheet_3: -1463790082984395072
+      Speens_0: -8369227728769284621
+      Speens_1: 3821298526622604333
+      Speens_2: 4303743840217290357
+      Speens_3: 1916312706
+      Speens_4: 692292911
+      Speens_5: 12719960
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
