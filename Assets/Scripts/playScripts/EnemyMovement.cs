@@ -4,6 +4,7 @@ using UnityEngine.UIElements;
 public class EnemyMovement : MonoBehaviour
 {
     [SerializeField] public Vector3 target;
+    
     [SerializeField] float speed;
     
     void Start()
