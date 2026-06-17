@@ -26,7 +26,8 @@ public class SynergyManager : MonoBehaviour
 
     private void Start()
     {
-        RefreshSceneSynergies();
+        // Delay synergy refresh to ensure all characters are initialized
+        Invoke(nameof(RefreshSceneSynergies), 0.1f);
     }
 
     /// <summary>Find a synergy by name and type.</summary>
