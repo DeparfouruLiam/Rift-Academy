@@ -13,8 +13,15 @@ public class LoginButton : MonoBehaviour
 
     private FirebaseAuth auth;
 
-    private void Start() {
-        auth = FirebaseAuth.DefaultInstance;
+    private async void Start() {
+        var dependencyStatus =
+        await FirebaseApp.CheckAndFixDependenciesAsync();
+
+        if (dependencyStatus == DependencyStatus.Available)
+        {
+            auth = FirebaseAuth.DefaultInstance;
+        }
+        print("Firebase Auth initialized: " + auth);
     }
     
 
