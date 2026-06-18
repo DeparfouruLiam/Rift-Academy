@@ -12,7 +12,7 @@ public class InitShardsTB : MonoBehaviour
     public GameObject txt; //I wanted to use this variable to hold the text, but as i said i couldn't reference it. There isn't exactly something like "public Text txt".
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    async void Start()
+    public async void Start()
     {
         FirebaseFirestore db = FirebaseFirestore.DefaultInstance;
 
@@ -40,7 +40,7 @@ public class InitShardsTB : MonoBehaviour
                 shards = int.Parse(data["Shards"].ToString());
 
             }
-            txt.GetComponent<UnityEngine.UI.Text>().text = shards.ToString()+ " Shards";
+            txt.GetComponent<TextMeshProUGUI>().text = shards.ToString()+ " Shards";
 
         }
        
