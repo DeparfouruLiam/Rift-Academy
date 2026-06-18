@@ -13,14 +13,19 @@ public class HeroHitbox : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        collision.GetComponent<Health>().IsHit(Damage);
         if (ProjectileScript!=null)
         {
+            Debug.Log(ProjectileScript.target);
+            if (ProjectileScript.target != null)
+            {
+                ProjectileScript.UpdateTarget();
+            }
             if (ProjectileScript.Pierce<1)
             {
                 ProjectileScript.LastHit();
             }
             ProjectileScript.Pierce -=1;
         }
+        collision.GetComponent<Health>().IsHit(Damage);
     }
 }

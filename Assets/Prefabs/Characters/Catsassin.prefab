@@ -318,7 +318,7 @@ GameObject:
   - component: {fileID: 1780637359065804012}
   - component: {fileID: 1373108379897564825}
   - component: {fileID: 5564071936781535220}
-  - component: {fileID: 3075544579557714901}
+  - component: {fileID: 8479643142755379768}
   m_Layer: 0
   m_Name: Catsassin
   m_TagString: Untagged
@@ -490,7 +490,7 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.5
---- !u!114 &3075544579557714901
+--- !u!114 &8479643142755379768
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -499,11 +499,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 8325371164763598866}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 212716ca7a67af449ba6b443f6ddf82f, type: 3}
+  m_Script: {fileID: 11500000, guid: a8d1e005b932cba438329e4692b87e23, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: '::'
-  BuffDuration: 5
-  buffEffect: {fileID: 7520359879114613057}
+  m_EditorClassIdentifier: Assembly-CSharp::SpawnProjectile
+  PresetProjo: {fileID: 6406750728465449608, guid: b11d7d5885b745d4eaf37e258841d6e0, type: 3}
+  PresetProjoUlt: {fileID: 6406750728465449608, guid: b99f3df1186aebb438c7f42f44fafc9d, type: 3}
+  PresetProjoSeek: {fileID: 6406750728465449608, guid: eedf95f61543a6f4f8b3770ced29ff19, type: 3}
+  SpawnOffset: 0.5
+  target: {fileID: 0}
 --- !u!1 &8388245461850327070
 GameObject:
   m_ObjectHideFlags: 0
