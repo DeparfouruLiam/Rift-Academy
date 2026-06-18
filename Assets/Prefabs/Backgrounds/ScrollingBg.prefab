@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   speed: 1
-  PresetBg: {fileID: 0}
+  PresetBg: {fileID: 1099623092096414123}
 --- !u!212 &5993829945715864454
 SpriteRenderer:
   serializedVersion: 2

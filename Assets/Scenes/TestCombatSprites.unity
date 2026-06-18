@@ -3746,7 +3746,7 @@ MonoBehaviour:
   Seconds: 1
   numberOfEnemy: 10
   pvMultiplicator: 1
-  winScreen: {fileID: 280997015}
+  winScreen: {fileID: 0}
   spawnPoints: []
   TargetPoints: []
 --- !u!4 &941448449
