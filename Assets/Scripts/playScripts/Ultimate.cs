@@ -4,30 +4,41 @@ using System.Collections;
 
 public class Ultimate : MonoBehaviour, IPointerClickHandler
 {
-    [SerializeField] private GameObject hero;
     [SerializeField] private float ultimateDuration = 5f; 
 
     private bool isUltimateActive = false;
+    private HeroAttack heroAttack;
+    private DragDrop2D dragScript;
 
+    void Start()
+    {
+        heroAttack = GetComponent<HeroAttack>();
+        dragScript = GetComponent<DragDrop2D>();
+    }
     public void OnPointerClick(PointerEventData eventData) 
     {
-        if (!isUltimateActive) 
+        if (dragScript != null && dragScript.onCase == true)
         {
-            Debug.Log("Ultimate activé !");
-            StartCoroutine(UltimateTimerRoutine());
+            if (!isUltimateActive) 
+            {
+                Debug.Log("Ultimate activé en cliquant sur le Sprite !");
+                StartCoroutine(UltimateTimerRoutine());
+            }
+        }
+        else
+        {
+            Debug.Log("Impossible de lancer l'ulti : le héros n'est pas encore posé !");
         }
     }
 
     private IEnumerator UltimateTimerRoutine() 
     {
         isUltimateActive = true;
-        HeroAttack heroAttack = hero.GetComponent<HeroAttack>();
 
         if (heroAttack != null) 
         {
             heroAttack.ultimateUp = true;
             yield return new WaitForSeconds(ultimateDuration);
-            heroAttack.ultimateUp = false;
         }
         
         isUltimateActive = false;

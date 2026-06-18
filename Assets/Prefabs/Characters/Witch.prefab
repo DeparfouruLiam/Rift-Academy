@@ -466,6 +466,7 @@ GameObject:
   - component: {fileID: 1373108379897564825}
   - component: {fileID: 5564071936781535220}
   - component: {fileID: 2898705719670308941}
+  - component: {fileID: 8487044415252384949}
   m_Layer: 0
   m_Name: Witch
   m_TagString: Untagged
@@ -601,6 +602,7 @@ MonoBehaviour:
   destinationTag: DropZone
   onCase: 0
   wasOnCase: 0
+  OrderLayer: 0
 --- !u!58 &5564071936781535220
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -652,3 +654,16 @@ MonoBehaviour:
   PresetProjo: {fileID: 6406750728465449608, guid: bba436303c1b90c4ab5220d443176574, type: 3}
   PresetProjoUlt: {fileID: 6406750728465449608, guid: cbe1169944c366b4fa754f2f22515a7f, type: 3}
   SpawnOffset: 0.5
+--- !u!114 &8487044415252384949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8325371164763598866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6cde8e67cbc45f4ea9628bb3b2ae5bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Ultimate
+  ultimateDuration: 5
