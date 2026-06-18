@@ -86,8 +86,8 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1000
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 21300000, guid: 233f5ee0de075e2408034eae7ce1354e, type: 3}
-  m_Color: {r: 0.21372347, g: 0.15083659, b: 0.3584906, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 6e5293541ca73c24cb1951e1e0705c62, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -109,6 +109,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   Damage: 5
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!61 &997926215383299282
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -221,3 +224,4 @@ MonoBehaviour:
   duration: 60
   FollowUp: {fileID: 0}
   target: {fileID: 0}
+  Spawner: {fileID: 0}

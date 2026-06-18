@@ -108,6 +108,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   Damage: 5
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!61 &997926215383299282
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -197,3 +200,5 @@ MonoBehaviour:
   Pierce: 1000
   duration: 0.1
   FollowUp: {fileID: 0}
+  target: {fileID: 0}
+  Spawner: {fileID: 0}

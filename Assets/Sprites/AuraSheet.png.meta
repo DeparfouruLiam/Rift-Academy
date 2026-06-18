@@ -1,13 +1,22 @@
 fileFormatVersion: 2
-guid: be7c3e2d5fd359945bafa1dc127e2237
+guid: e8f992ad3eb34414283f501812fa72e0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8182742229841981240
-    second: CatsassinSpriteSheet_0
+      213: 7959803257711662007
+    second: AuraSheet_0
   - first:
-      213: -7472997263569132634
-    second: CatsassinSpriteSheet_1
+      213: -3608352620498503871
+    second: AuraSheet_1
+  - first:
+      213: -127385099002246520
+    second: AuraSheet_2
+  - first:
+      213: -2524011752830378919
+    second: AuraSheet_3
+  - first:
+      213: -1433998063202419061
+    second: AuraSheet_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -116,7 +125,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: CatsassinSpriteSheet_0
+      name: AuraSheet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -131,14 +140,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 83fa15a34b0fe8170800000000000000
-      internalID: 8182742229841981240
+      spriteID: 7b396e9d3e6e67e60800000000000000
+      internalID: 7959803257711662007
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CatsassinSpriteSheet_1
+      name: AuraSheet_1
       rect:
         serializedVersion: 2
         x: 1000
@@ -153,8 +162,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6a3ee7915949a4890800000000000000
-      internalID: -7472997263569132634
+      spriteID: 14736d6d86e8cedc0800000000000000
+      internalID: -3608352620498503871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AuraSheet_2
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 0
+        width: 1000
+        height: 1000
+      alignment: 9
+      pivot: {x: 0.45, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88a0b486def6b3ef0800000000000000
+      internalID: -127385099002246520
       vertices: []
       indices: 
       edges: []
@@ -163,7 +194,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: f44dcf2b92d469241b11037e80e63772
+    spriteID: 0b9e270b4db82ca4c83fc6bbf0ca7fca
     internalID: 0
     vertices: []
     indices: 
@@ -175,8 +206,9 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":1000.0,"y":1000.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      CatsassinSpriteSheet_0: 8182742229841981240
-      CatsassinSpriteSheet_1: -7472997263569132634
+      AuraSheet_0: 7959803257711662007
+      AuraSheet_1: -3608352620498503871
+      AuraSheet_2: -127385099002246520
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

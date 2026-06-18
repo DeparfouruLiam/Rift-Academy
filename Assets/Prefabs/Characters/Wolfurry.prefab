@@ -107,6 +107,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   Damage: 5
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!50 &8132067624145512057
 Rigidbody2D:
   serializedVersion: 5
@@ -626,7 +629,7 @@ GameObject:
   - component: {fileID: 5564071936781535220}
   - component: {fileID: 23049425508422253}
   - component: {fileID: -8787798772312849527}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Wolfurry
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -724,6 +727,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   AttackSpeed: 3
   ultimateUp: 0
+  AttackSpeedModifier: 1
 --- !u!95 &1780637359065804012
 Animator:
   serializedVersion: 7
