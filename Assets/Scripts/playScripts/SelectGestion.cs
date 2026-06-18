@@ -1,14 +1,13 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
-using UnityEngine.SceneManagement; // <-- AJOUTÉ pour pouvoir changer de scène
+using UnityEngine.SceneManagement; 
 
 public class SelectGestion : MonoBehaviour
 {
     public SlotHero[] slotsEquipe;
     
-    [Header("Sauvegarde")]
-    [SerializeField] private DataEquipe dataGlobale; // Glisse le fichier "SauvegardeEquipe" ici
+    [SerializeField] private DataEquipe dataGlobale; 
 
     public void SelectionnerHero() 
     {
@@ -16,7 +15,10 @@ public class SelectGestion : MonoBehaviour
         if (objetClique == null) return;
 
         Button personnageClique = objetClique.GetComponent<Button>();
-        if (personnageClique == null) return;
+        // On récupère le script qui contient ton vrai Prefab !
+        BoutonHeroUI infoHero = objetClique.GetComponent<BoutonHeroUI>(); 
+        
+        if (personnageClique == null || infoHero == null) return;
 
         for (int i = 0; i < slotsEquipe.Length; i++)
         {
@@ -29,8 +31,12 @@ public class SelectGestion : MonoBehaviour
                 imageDuSlot.color = Color.white;
                 slotsEquipe[i].estOccupe = true;
 
-                // --- SAUVEGARDE ---
-                dataGlobale.herosChoisis[i] = imageDuPersoClique.sprite;
+                // --- LA CORRECTION EST ICI ---
+                // On sauvegarde le PREFAB (GameObject) et non plus le Sprite !
+                if (dataGlobale != null)
+                {
+                    dataGlobale.herosChoisis[i] = infoHero.prefabDuHero;
+                }
 
                 personnageClique.interactable = false;
                 imageDuPersoClique.color = new Color(1f, 1f, 1f, 0.3f);
@@ -47,13 +53,14 @@ public class SelectGestion : MonoBehaviour
         SlotHero scriptSlot = slotClique.GetComponent<SlotHero>();
         if (scriptSlot == null || scriptSlot.estOccupe == false) return;
 
-        // Trouver l'index du slot cliqué pour nettoyer la sauvegarde au bon endroit
         for (int i = 0; i < slotsEquipe.Length; i++)
         {
             if (slotsEquipe[i].gameObject == slotClique)
             {
-                // --- NETTOYAGE SAUVEGARDE ---
-                dataGlobale.herosChoisis[i] = null; 
+                if (dataGlobale != null)
+                {
+                    dataGlobale.herosChoisis[i] = null; // On vide le Prefab
+                }
             }
         }
 
@@ -62,10 +69,8 @@ public class SelectGestion : MonoBehaviour
         scriptSlot.estOccupe = false;
     }
 
-    // --- NOUVELLE FONCTION POUR TON BOUTON COMBAT ---
     public void LancerNiveau(string nomDuNiveau)
     {
-        // On charge la scène de combat (ex: "Level1")
         SceneManager.LoadScene(nomDuNiveau);
     }
 }

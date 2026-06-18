@@ -1,7 +1,7 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "NouvelleDataEquipe", menuName = "MonJeu/DataEquipe")]
+[CreateAssetMenu(fileName = "NouvelleDataEquipe", menuName = "Créer Sauvegarde Equipe")]
 public class DataEquipe : ScriptableObject
 {
-        public Sprite[] herosChoisis = new Sprite[5];
+    public GameObject[] herosChoisis = new GameObject[5];
 }
