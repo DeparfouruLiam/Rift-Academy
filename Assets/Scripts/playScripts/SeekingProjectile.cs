@@ -2,14 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ProjectileMovement : MonoBehaviour
+public class SeekingProjectile : MonoBehaviour
 {
     [SerializeField] float speed;
     [SerializeField] public int Pierce;
     [SerializeField] float duration;
     [SerializeField] GameObject FollowUp;
     public GameObject target;
-    public GameObject Spawner;
 
 
     private void Start() {
@@ -48,18 +47,4 @@ public class ProjectileMovement : MonoBehaviour
         yield return new WaitForSeconds(duration);
         Destroy(gameObject);
     }
-
-    public void UpdateTarget()
-    {
-        if(target != Spawner.GetComponent<SpawnProjectile>().target)
-        {
-            target = Spawner.GetComponent<SpawnProjectile>().target;
-        }
-        else
-        {
-            target = gameObject;
-        }
-        
-    }
-
 }
