@@ -20,6 +20,8 @@ public class Spawner : MonoBehaviour
     [Header("Configuration des Vagues")]
     [SerializeField] private Vague[] vagues; 
     [SerializeField] private float tempsEntreVagues = 5f; 
+    [SerializeField] private GameObject BoutonDebut; 
+
 
     [Header("Points d'apparition")]
     [SerializeField] private Transform[] spawnPoints; 
@@ -43,12 +45,11 @@ public class Spawner : MonoBehaviour
     // --- NOUVELLE FONCTION : Appelée par ton bouton UI "Lancer la partie" ---
     public void LancerLaPartie()
     {
-        if (jeuLance == false)
-        {
             jeuLance = true; // On active l'interrupteur
             Debug.Log("La partie commence ! Les héros sont verrouillés.");
             StartCoroutine(LancerVaguesRoutine()); // On démarre enfin les vagues
-        }
+            BoutonDebut.SetActive(false);
+        
     }
 
     // L'ancien Start() est devenu une routine normale

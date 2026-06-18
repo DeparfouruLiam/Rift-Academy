@@ -107,6 +107,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   Damage: 10
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!61 &1651984464467139526
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -319,6 +322,7 @@ GameObject:
   - component: {fileID: 1373108379897564825}
   - component: {fileID: 5564071936781535220}
   - component: {fileID: 8479643142755379768}
+  - component: {fileID: 3748419057738598398}
   m_Layer: 14
   m_Name: Catsassin
   m_TagString: Untagged
@@ -416,6 +420,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   AttackSpeed: 1
   ultimateUp: 0
+  AttackSpeedModifier: 1
 --- !u!95 &1780637359065804012
 Animator:
   serializedVersion: 7
@@ -507,6 +512,19 @@ MonoBehaviour:
   PresetProjoSeek: {fileID: 6406750728465449608, guid: eedf95f61543a6f4f8b3770ced29ff19, type: 3}
   SpawnOffset: 0.5
   target: {fileID: 0}
+--- !u!114 &3748419057738598398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8325371164763598866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6cde8e67cbc45f4ea9628bb3b2ae5bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Ultimate
+  ultimateDuration: 7
 --- !u!1 &8388245461850327070
 GameObject:
   m_ObjectHideFlags: 0

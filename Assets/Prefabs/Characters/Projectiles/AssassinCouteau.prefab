@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 2258831296708626669}
   - component: {fileID: 997926215383299282}
   - component: {fileID: 2717490124740600753}
-  - component: {fileID: 7177627347416647384}
   - component: {fileID: 6676531736193758701}
   m_Layer: 0
   m_Name: AssassinCouteau
@@ -185,28 +184,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!95 &7177627347416647384
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6406750728465449608}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 30c152ce75dab01469cfed46d405ed34, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &6676531736193758701
 MonoBehaviour:
   m_ObjectHideFlags: 0

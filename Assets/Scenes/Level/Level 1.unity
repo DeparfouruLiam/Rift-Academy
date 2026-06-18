@@ -10289,7 +10289,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 11
+  m_SortingOrder: 3000
   m_MaskInteraction: 0
   m_Sprite: {fileID: -7353712823413310949, guid: fba90dc9a13308f4b9e6aa07f4a01a4b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -11543,10 +11543,11 @@ MonoBehaviour:
   vagues:
   - nomVague: 1
     Enemy: {fileID: 7604670548259980914, guid: 212999a99d06a79459bcb3df55ebed45, type: 3}
-    numberOfEnemy: 5
+    numberOfEnemy: 15
     Seconds: 1
-    pvMultiplicator: 0
+    pvMultiplicator: 1
   tempsEntreVagues: 0
+  BoutonDebut: {fileID: 1521700024}
   spawnPoints:
   - {fileID: 1904654618}
   - {fileID: 111980152}
@@ -11939,6 +11940,7 @@ MonoBehaviour:
     Seconds: 1
     pvMultiplicator: 2
   tempsEntreVagues: 1
+  BoutonDebut: {fileID: 0}
   spawnPoints:
   - {fileID: 1786135460}
   - {fileID: 111980152}
