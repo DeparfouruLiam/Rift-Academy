@@ -8,7 +8,7 @@ public class FinDeNiveau : MonoBehaviour
 
     [Header("Configuration Spawners")]
 
-    public int nombreDeSpawnersTotal = 2; 
+    public int nombreDeSpawnersTotal = 1; 
     
     private int spawnersTermines = 0;
     private bool niveauTermine = false;
