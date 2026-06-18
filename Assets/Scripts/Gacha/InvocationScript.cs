@@ -74,17 +74,23 @@ public class InvocationScript : MonoBehaviour
 
                     int heroId;
 
-                    if (tmp < 1000)
+                    if (tmp < 500)
                     {
                         heroId = int.Parse($"{bannerHeroes[0]}{bannerHeroes[1]}");
                     }
-                    else if (tmp < 5500)
+                    else if (tmp < 2500)
                     {
                         heroId = int.Parse($"{bannerHeroes[2]}{bannerHeroes[3]}");
+                    }else if (tmp < 5500)
+                    {
+                        heroId = int.Parse($"{bannerHeroes[4]}{bannerHeroes[5]}");
+                    }else if (tmp < 7500)
+                    {
+                        heroId = int.Parse($"{bannerHeroes[6]}{bannerHeroes[7]}");
                     }
                     else
                     {
-                        heroId = int.Parse($"{bannerHeroes[4]}{bannerHeroes[5]}");
+                        heroId = int.Parse($"{bannerHeroes[8]}{bannerHeroes[9]}");
                     }
 
                     // Debug.Log("Roll: " + tmp);
