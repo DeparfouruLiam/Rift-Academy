@@ -29,3 +29,4 @@ public class HeroHitbox : MonoBehaviour
         collision.GetComponent<Health>().IsHit(Damage);
     }
 }
+
