@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9eb978d1e8b80814abf38f06353867c8, type: 3}
-  m_Name: DimensionDark
+  m_Name: "Acad\xE9mie"
   m_EditorClassIdentifier: Assembly-CSharp::SynergyData
-  dimensionOrClassName: Dark
+  dimensionOrClassName: 
   synergyType: 0
   tiers:
   - bonus:
@@ -25,15 +25,14 @@ MonoBehaviour:
       multiDegatsCritique: 1
       bonusPv: 0
       bonusDefense: 0
-      bonusDegats: 200
+      bonusDegats: 0
       bonusPenetration: 0
       bonusVitesseAttaque: 0
       bonusMana: 0
       bonusChanceCritique: 0
       bonusDegatsCritique: 0
       upgradeUltime: 0
-    abilities:
-    - 
+    abilities: []
   - bonus:
       multiPv: 1
       multiDefense: 1
@@ -44,7 +43,7 @@ MonoBehaviour:
       multiDegatsCritique: 1
       bonusPv: 0
       bonusDefense: 0
-      bonusDegats: 100
+      bonusDegats: 0
       bonusPenetration: 0
       bonusVitesseAttaque: 0
       bonusMana: 0
