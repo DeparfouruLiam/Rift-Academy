@@ -2,54 +2,74 @@ using System;
 using System.Collections;
 using UnityEngine;
 
+// NOUVEAU : La petite boîte qui va te permettre de configurer chaque vague dans l'Inspecteur
+[System.Serializable]
+public class Vague
+{
+    public string nomVague = "Vague 1";
+    public GameObject Enemy; // Le monstre de cette vague
+    public int numberOfEnemy; // Combien on en fait spawn
+    public float Seconds; // Le délai entre chaque monstre
+    public int pvMultiplicator = 1; // Pratique : tu peux mettre x2 pour la vague 2, x3 pour la vague 3 !
+}
+
 public class Spawner : MonoBehaviour
 {
-    [SerializeField] public Transform target;
-    [SerializeField] GameObject Enemy;
-    [SerializeField] float Seconds;
-    [SerializeField] int numberOfEnemy;
-    [SerializeField] int pvMultiplicator;
-    [SerializeField] GameObject winScreen;
+    [Header("Configuration des Vagues")]
+    [SerializeField] private Vague[] vagues; 
+    [SerializeField] private float tempsEntreVagues = 5f; 
 
-
-    // --- AJOUT : Un tableau pour glisser les GameObjects représentants tes lignes ---
+    [Header("Points d'apparition")]
     [SerializeField] private Transform[] spawnPoints; 
-    [SerializeField] private Transform[] TargetPoints; 
+    [SerializeField] private Transform[] TargetPoints;
+    [SerializeField] public Transform target;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    private FinDeNiveau scriptFin; 
+
     IEnumerator Start()
     {
-        for (int i = 0; i < numberOfEnemy; i++)
+        
+        scriptFin = FindFirstObjectByType<FinDeNiveau>();
+
+    
+        for (int w = 0; w < vagues.Length; w++)
         {
-            yield return new WaitForSeconds(Seconds);
+            Vague vagueActuelle = vagues[w];
+            Debug.Log("Lancement de : " + vagueActuelle.nomVague);
 
-            // 1. Choisir un point d'apparition au hasard parmi tes lignes
-            Transform randomSpawnPoint = transform; // Par défaut, la position du spawner lui-même
-            if (spawnPoints != null && spawnPoints.Length > 0)
+           
+            for (int i = 0; i < vagueActuelle.numberOfEnemy; i++)
             {
-                int randomIndex = UnityEngine.Random.Range(0, spawnPoints.Length);
-                randomSpawnPoint = spawnPoints[randomIndex];
-            }
+                yield return new WaitForSeconds(vagueActuelle.Seconds);
 
-            // 2. Instancier l'ennemi à la position de la ligne choisie (sans le mettre "enfant" du spawner pour éviter les bugs d'échelle)
-            GameObject enemy = Instantiate(Enemy, randomSpawnPoint.position, Quaternion.identity);
+               
+                Transform randomSpawnPoint = transform; 
+                if (spawnPoints != null && spawnPoints.Length > 0)
+                {
+                    int randomIndex = UnityEngine.Random.Range(0, spawnPoints.Length);
+                    randomSpawnPoint = spawnPoints[randomIndex];
+                }
+
+                
+                GameObject enemy = Instantiate(vagueActuelle.Enemy, randomSpawnPoint.position, Quaternion.identity);
             
-            // 3. Appliquer tes scripts existants
-           Vector3 pos = enemy.transform.position;pos.x -= 20;enemy.GetComponent<EnemyMovement>().target = pos ;
-            enemy.GetComponent<Health>().HP *= pvMultiplicator;
+                Vector3 pos = enemy.transform.position;
+                pos.x -= 20;
+                enemy.GetComponent<EnemyMovement>().target = pos;
+                enemy.GetComponent<Health>().HP *= vagueActuelle.pvMultiplicator;
+            }
+            if (w < vagues.Length - 1)
+            {
+                yield return new WaitForSeconds(tempsEntreVagues);
+            }
         }
 
+        Debug.Log("Tous les ennemis sont apparus ! On attend qu'ils soient tous morts...");
         
 
-        // --- AJOUT : Logique de victoire ---
-        // Une fois que la boucle 'for' est finie, tous les ennemis ont été créés.
-        yield return new WaitForSeconds(2f); // Optionnel : petite attente avant d'afficher le écran de fin
-        Debug.Log("Tous les ennemis sont apparus ! You win");
-        if (winScreen != null)
+        if (scriptFin != null)
         {
-            winScreen.SetActive(true);
+            scriptFin.SignalerSpawnerTermine();
         }
     }
-
-    // Note : J'ai retiré la fonction SpawnEnemy() car elle faisait doublon avec ton IEnumerator Start
 }

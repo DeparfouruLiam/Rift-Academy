@@ -8,7 +8,6 @@ public class AffichageEquipeCombat : MonoBehaviour
     
     public Transform pointDApparition; 
 
-    // NOUVEAU : Un tableau pour mémoriser les héros déjà invoqués sur la map
     private GameObject[] herosInvoques = new GameObject[5];
 
     void Start()
