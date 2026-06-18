@@ -6,18 +6,18 @@ public class AffichageEquipeCombat : MonoBehaviour
     [SerializeField] private DataEquipe dataGlobale; 
     [SerializeField] private Image[] boutonsAchatCombat; 
     
-    [Header("Où faire apparaître les héros ?")]
-    public Transform pointDApparition; // L'endroit où le héros spawn avant qu'on le drag
+    public Transform pointDApparition; 
+
+    // NOUVEAU : Un tableau pour mémoriser les héros déjà invoqués sur la map
+    private GameObject[] herosInvoques = new GameObject[5];
 
     void Start()
     {
         for (int i = 0; i < boutonsAchatCombat.Length; i++)
         {
-            GameObject prefabSauvegarde = dataGlobale.herosChoisis[i];
-
-            if (prefabSauvegarde != null)
+            if (dataGlobale.herosChoisis[i] != null)
             {
-                SpriteRenderer spriteDuPrefab = prefabSauvegarde.GetComponent<SpriteRenderer>();
+                SpriteRenderer spriteDuPrefab = dataGlobale.herosChoisis[i].GetComponent<SpriteRenderer>();
 
                 if (spriteDuPrefab != null)
                 {
@@ -33,15 +33,26 @@ public class AffichageEquipeCombat : MonoBehaviour
             }
         }
     }
-
-    public void InvoquerHero(int indexDuBouton)
+    public void ActionBoutonHero(int indexDuBouton)
     {
-        GameObject prefabAInvoquer = dataGlobale.herosChoisis[indexDuBouton];
-
-        if (prefabAInvoquer != null)
+        if (herosInvoques[indexDuBouton] == null)
         {
-            Instantiate(prefabAInvoquer, pointDApparition.position, Quaternion.identity);
-            Debug.Log("Héros invoqué ! Tu peux maintenant le Drag & Drop.");
+            GameObject prefabAInvoquer = dataGlobale.herosChoisis[indexDuBouton];
+
+            if (prefabAInvoquer != null)
+            {
+                herosInvoques[indexDuBouton] = Instantiate(prefabAInvoquer, pointDApparition.position, Quaternion.identity);
+                Debug.Log("Héros invoqué ! (Il ne peut plus être invoqué en double)");
+            }
+        }
+        else
+        {
+            Ultimate scriptUlti = herosInvoques[indexDuBouton].GetComponent<Ultimate>();
+            
+            if (scriptUlti != null)
+            {
+                scriptUlti.LancerUltiDepuisUI();
+            }
         }
     }
 }

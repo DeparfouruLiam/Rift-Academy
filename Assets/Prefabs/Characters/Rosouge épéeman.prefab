@@ -319,6 +319,7 @@ GameObject:
   - component: {fileID: 1373108379897564825}
   - component: {fileID: 5564071936781535220}
   - component: {fileID: 3075544579557714901}
+  - component: {fileID: -4411122833534445522}
   m_Layer: 0
   m_Name: "Rosouge \xE9p\xE9eman"
   m_TagString: Untagged
@@ -453,6 +454,7 @@ MonoBehaviour:
   destinationTag: DropZone
   onCase: 0
   wasOnCase: 0
+  OrderLayer: 0
 --- !u!58 &5564071936781535220
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -503,6 +505,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   BuffDuration: 5
   buffEffect: {fileID: 7520359879114613057}
+--- !u!114 &-4411122833534445522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8325371164763598866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6cde8e67cbc45f4ea9628bb3b2ae5bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Ultimate
+  ultimateDuration: 5
 --- !u!1 &8388245461850327070
 GameObject:
   m_ObjectHideFlags: 0

@@ -566,7 +566,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1627837016}
         m_TargetAssemblyTypeName: AffichageEquipeCombat, Assembly-CSharp
-        m_MethodName: InvoquerHero
+        m_MethodName: ActionBoutonHero
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1485,7 +1485,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1627837016}
         m_TargetAssemblyTypeName: AffichageEquipeCombat, Assembly-CSharp
-        m_MethodName: InvoquerHero
+        m_MethodName: ActionBoutonHero
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2438,6 +2438,7 @@ GameObject:
   - component: {fileID: 624139351}
   - component: {fileID: 624139350}
   - component: {fileID: 624139349}
+  - component: {fileID: 624139354}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2579,6 +2580,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &624139354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624139348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56666c5a40171f54783dd416a44f42bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.EventSystems.Physics2DRaycaster
+  m_EventMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_MaxRayIntersections: 0
 --- !u!1 &658374832
 GameObject:
   m_ObjectHideFlags: 0
@@ -3299,7 +3316,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1627837016}
         m_TargetAssemblyTypeName: AffichageEquipeCombat, Assembly-CSharp
-        m_MethodName: InvoquerHero
+        m_MethodName: ActionBoutonHero
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10404,7 +10421,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1627837016}
         m_TargetAssemblyTypeName: AffichageEquipeCombat, Assembly-CSharp
-        m_MethodName: InvoquerHero
+        m_MethodName: ActionBoutonHero
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11189,8 +11206,8 @@ RectTransform:
   m_GameObject: {fileID: 1540142738}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.46972, y: 0.46972, z: 0.46972}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.9, y: 0.9, z: 0.9}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1278484273}
   - {fileID: 719420656}
@@ -11201,7 +11218,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 77, y: -163}
+  m_AnchoredPosition: {x: -26, y: -159}
   m_SizeDelta: {x: 585, y: 102}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1604882281
@@ -13669,7 +13686,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1627837016}
         m_TargetAssemblyTypeName: AffichageEquipeCombat, Assembly-CSharp
-        m_MethodName: InvoquerHero
+        m_MethodName: ActionBoutonHero
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -1,12 +1,12 @@
 using UnityEngine;
-using UnityEngine.EventSystems;
 using System.Collections; 
 
-public class Ultimate : MonoBehaviour, IPointerClickHandler
+public class Ultimate : MonoBehaviour
 {
     [SerializeField] private float ultimateDuration = 5f; 
 
     private bool isUltimateActive = false;
+    
     private HeroAttack heroAttack;
     private DragDrop2D dragScript;
 
@@ -15,14 +15,19 @@ public class Ultimate : MonoBehaviour, IPointerClickHandler
         heroAttack = GetComponent<HeroAttack>();
         dragScript = GetComponent<DragDrop2D>();
     }
-    public void OnPointerClick(PointerEventData eventData) 
+
+    public void LancerUltiDepuisUI() 
     {
         if (dragScript != null && dragScript.onCase == true)
         {
             if (!isUltimateActive) 
             {
-                Debug.Log("Ultimate activé en cliquant sur le Sprite !");
+                Debug.Log("Ultimate activé depuis le bouton UI !");
                 StartCoroutine(UltimateTimerRoutine());
+            }
+            else
+            {
+                Debug.Log("L'ulti est déjà en cours ou en rechargement !");
             }
         }
         else

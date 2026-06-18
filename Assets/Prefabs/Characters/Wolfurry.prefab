@@ -625,6 +625,7 @@ GameObject:
   - component: {fileID: 1373108379897564825}
   - component: {fileID: 5564071936781535220}
   - component: {fileID: 23049425508422253}
+  - component: {fileID: -8787798772312849527}
   m_Layer: 0
   m_Name: Wolfurry
   m_TagString: Untagged
@@ -812,3 +813,16 @@ MonoBehaviour:
   DebuffDuration: 7
   debuffEffect: {fileID: 6024741555547911739}
   DebuffStartTime: 0
+--- !u!114 &-8787798772312849527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8325371164763598866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6cde8e67cbc45f4ea9628bb3b2ae5bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Ultimate
+  ultimateDuration: 5
