@@ -1179,7 +1179,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a0ed6638c87bd9429e4651625307ec9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NavigateTo
-  TargetScene: AcademieMenu
+  TargetScene: ChoixNiveau
 --- !u!114 &323702154
 MonoBehaviour:
   m_ObjectHideFlags: 0
