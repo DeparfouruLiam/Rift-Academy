@@ -2,47 +2,67 @@ using System;
 using System.Collections;
 using UnityEngine;
 
-// NOUVEAU : La petite boîte qui va te permettre de configurer chaque vague dans l'Inspecteur
 [System.Serializable]
 public class Vague
 {
     public string nomVague = "Vague 1";
-    public GameObject Enemy; // Le monstre de cette vague
-    public int numberOfEnemy; // Combien on en fait spawn
-    public float Seconds; // Le délai entre chaque monstre
-    public int pvMultiplicator = 1; // Pratique : tu peux mettre x2 pour la vague 2, x3 pour la vague 3 !
+    public GameObject Enemy; 
+    public int numberOfEnemy; 
+    public float Seconds; 
+    public int pvMultiplicator = 1; 
 }
 
 public class Spawner : MonoBehaviour
 {
+    // --- MAGIE : Cette variable est "static", ce qui veut dire que le script DragDrop2D peut la lire facilement ! ---
+    public static bool jeuLance = false; 
+
     [Header("Configuration des Vagues")]
     [SerializeField] private Vague[] vagues; 
     [SerializeField] private float tempsEntreVagues = 5f; 
 
     [Header("Points d'apparition")]
     [SerializeField] private Transform[] spawnPoints; 
-    [SerializeField] private Transform[] TargetPoints;
+    [SerializeField] private Transform[] TargetPoints; 
     [SerializeField] public Transform target;
 
     private FinDeNiveau scriptFin; 
 
-    IEnumerator Start()
+    private void Awake()
     {
-        
-        scriptFin = FindFirstObjectByType<FinDeNiveau>();
+        // Sécurité : Quand on charge le niveau, le jeu n'est pas encore lancé
+        jeuLance = false; 
+    }
 
-    
+    void Start()
+    {
+        scriptFin = FindFirstObjectByType<FinDeNiveau>();
+        // On a enlevé la coroutine d'ici pour qu'elle ne se lance pas toute seule !
+    }
+
+    // --- NOUVELLE FONCTION : Appelée par ton bouton UI "Lancer la partie" ---
+    public void LancerLaPartie()
+    {
+        if (jeuLance == false)
+        {
+            jeuLance = true; // On active l'interrupteur
+            Debug.Log("La partie commence ! Les héros sont verrouillés.");
+            StartCoroutine(LancerVaguesRoutine()); // On démarre enfin les vagues
+        }
+    }
+
+    // L'ancien Start() est devenu une routine normale
+    IEnumerator LancerVaguesRoutine()
+    {
         for (int w = 0; w < vagues.Length; w++)
         {
             Vague vagueActuelle = vagues[w];
             Debug.Log("Lancement de : " + vagueActuelle.nomVague);
 
-           
             for (int i = 0; i < vagueActuelle.numberOfEnemy; i++)
             {
                 yield return new WaitForSeconds(vagueActuelle.Seconds);
 
-               
                 Transform randomSpawnPoint = transform; 
                 if (spawnPoints != null && spawnPoints.Length > 0)
                 {
@@ -50,7 +70,6 @@ public class Spawner : MonoBehaviour
                     randomSpawnPoint = spawnPoints[randomIndex];
                 }
 
-                
                 GameObject enemy = Instantiate(vagueActuelle.Enemy, randomSpawnPoint.position, Quaternion.identity);
             
                 Vector3 pos = enemy.transform.position;
@@ -58,6 +77,7 @@ public class Spawner : MonoBehaviour
                 enemy.GetComponent<EnemyMovement>().target = pos;
                 enemy.GetComponent<Health>().HP *= vagueActuelle.pvMultiplicator;
             }
+
             if (w < vagues.Length - 1)
             {
                 yield return new WaitForSeconds(tempsEntreVagues);
@@ -66,7 +86,6 @@ public class Spawner : MonoBehaviour
 
         Debug.Log("Tous les ennemis sont apparus ! On attend qu'ils soient tous morts...");
         
-
         if (scriptFin != null)
         {
             scriptFin.SignalerSpawnerTermine();

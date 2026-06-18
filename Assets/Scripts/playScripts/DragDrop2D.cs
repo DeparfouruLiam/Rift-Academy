@@ -20,6 +20,14 @@ public class DragDrop2D : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDr
 
     public void OnBeginDrag(PointerEventData eventData)
     {
+        // --- SÉCURITÉ : Si la partie est lancée, on bloque le Drag ! ---
+        if (Spawner.jeuLance == true)
+        {
+            Debug.Log("Le combat a commencé ! Impossible de déplacer ce héros.");
+            return; // On quitte la fonction immédiatement, le drag ne commence pas
+        }
+
+        // (Le reste de ton code d'origine ne bouge pas, il reste juste en dessous)
         if (onCase)
         {
             wasOnCase = true;
@@ -28,7 +36,6 @@ public class DragDrop2D : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDr
         originalPosition = transform.position;
         offset = transform.position - GetWorldPosition(eventData.position);
     }
-
     public void OnDrag(PointerEventData eventData)
     {
         transform.position = GetWorldPosition(eventData.position) + offset;
