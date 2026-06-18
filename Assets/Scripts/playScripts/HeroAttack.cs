@@ -3,10 +3,13 @@ using UnityEngine;
 
 public class HeroAttack : MonoBehaviour
 {
-    [SerializeField] float AttackSpeed;
+    [SerializeField] public float AttackSpeed;
 
     public bool ultimateUp = false;
     private Animator anim;
+    public float AttackSpeedModifier = 1;
+    private Coroutine AttSpeedCoroutine;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     IEnumerator Start()
@@ -18,7 +21,7 @@ public class HeroAttack : MonoBehaviour
                 anim.SetTrigger("Attack");
             
         }
-        yield return new WaitForSeconds(AttackSpeed);
+        yield return new WaitForSeconds(AttackSpeed*AttackSpeedModifier);
         }
     }
 
@@ -33,4 +36,23 @@ public class HeroAttack : MonoBehaviour
             }
         }
     }
+
+    public void AttSpeBuff(float BuffLevel, float BuffDuration)
+    {
+        if (AttSpeedCoroutine != null)
+            {
+                StopCoroutine(AttSpeedCoroutine);
+            }
+        AttSpeedCoroutine = StartCoroutine(BuffDebuffCoroutine(BuffLevel,BuffDuration));
+    }
+
+    IEnumerator BuffDebuffCoroutine(float BuffLevel, float BuffDuration)
+    {
+        Debug.Log(BuffDuration);
+        AttackSpeedModifier = BuffLevel;
+        yield return new WaitForSeconds(BuffDuration+0.1f);
+        Debug.Log("EndDebuff");
+        AttackSpeedModifier=1;
+    }
 }
+
