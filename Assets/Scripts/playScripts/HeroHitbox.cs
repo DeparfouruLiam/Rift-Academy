@@ -32,7 +32,7 @@ public class HeroHitbox : MonoBehaviour
             ProjectileScript.Pierce -= 1;
         }
 
-        int damage = characterObject != null ? (int)characterObject.currentDegats : 0;
+        int damage = characterObject != null ? characterObject.GetDamageWithCritical() : 0;
         Health targetHealth = collision.GetComponent<Health>();
         if (targetHealth != null)
         {

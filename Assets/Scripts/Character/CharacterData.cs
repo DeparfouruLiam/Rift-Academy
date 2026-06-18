@@ -19,7 +19,7 @@ public class CharacterData : ScriptableObject
     public float manaStat = 1f; 
     
     [Header("Critiques")]
-    [Range(0, 1)] public float chanceCritique = 0.1f;
+    public float chanceCritique = 0.1f;
     public float degatsCritique = 1.5f;
 
     [Header("Visuel")]

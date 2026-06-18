@@ -71,4 +71,22 @@ public class CharacterObject : MonoBehaviour
             
         }
     }
+
+    public int GetDamageWithCritical()
+    {
+        float baseDamage = currentDegats;
+        float chanceCrit = Mathf.Clamp01(currentChanceCritique);
+        float surplus = Mathf.Max(0f, currentChanceCritique - 1f);
+        float critMultiplier = currentDegatsCritique + (surplus * 0.6f);
+        
+        bool isCritical = UnityEngine.Random.value < chanceCrit;
+        int damage = (int)(baseDamage * (isCritical ? critMultiplier : 1f));
+        
+        if (isCritical)
+        {
+            Debug.Log("CRITIQUE! Dégâts: " + damage + " (base: " + baseDamage + " x " + critMultiplier + ")");
+        }
+        
+        return damage;
+    }
 }
