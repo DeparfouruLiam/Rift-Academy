@@ -1,11 +1,13 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class DebuffScript : MonoBehaviour
 {
-    [SerializeField] float DebuffDuration;
+    [SerializeField] public float DebuffDuration;
     [SerializeField] GameObject debuffEffect;
+    public float DebuffStartTime;
 
 
     // Update is called once per frame
@@ -15,6 +17,7 @@ public class DebuffScript : MonoBehaviour
     }
 
     IEnumerator DebuffCoroutine() {
+        DebuffStartTime = Time.time;
         debuffEffect.SetActive(true);
         yield return new WaitForSeconds(DebuffDuration);
         debuffEffect.SetActive(false);
