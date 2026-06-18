@@ -50,7 +50,8 @@ public class LoginButton : MonoBehaviour
                 { "Mail", Email.text },
                 { "Pseudo", Username.text },
                 { "Money", 0 },
-                { "Shards", 0 }
+                { "Shards", 1000 },
+                { "HeroesConst", "0000000000000000000000000000000000000000" }
             };
 
             await db.Collection("Users").Document(user.UserId).SetAsync(NewUser);
