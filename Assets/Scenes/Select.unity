@@ -224,7 +224,7 @@ GameObject:
   - component: {fileID: 291768972}
   - component: {fileID: 291768971}
   m_Layer: 5
-  m_Name: Mage (2)
+  m_Name: Catsassin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -261,7 +261,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b08db57417a9f714280c6a9de6d6e523, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BoutonHeroUI
-  prefabDuHero: {fileID: 8325371164763598866, guid: cc19da5c652028f4b964053222787820, type: 3}
+  prefabDuHero: {fileID: 8325371164763598866, guid: 4b1c2f559b746974f8fca647b4e4c8bc, type: 3}
 --- !u!114 &291768972
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1710,7 +1710,7 @@ GameObject:
   - component: {fileID: 1392804024}
   - component: {fileID: 1392804023}
   m_Layer: 5
-  m_Name: Mage (1)
+  m_Name: Wolfurry
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
