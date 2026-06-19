@@ -57,7 +57,7 @@ MonoBehaviour:
     multiDegatsCritique: 1
     bonusPv: 0
     bonusDefense: 0
-    bonusDegats: 10000
+    bonusDegats: 0
     bonusPenetration: 0
     bonusVitesseAttaque: 0
     bonusMana: 0

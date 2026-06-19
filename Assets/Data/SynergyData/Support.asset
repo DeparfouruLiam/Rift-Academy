@@ -21,7 +21,7 @@ MonoBehaviour:
     multiVitesseAttaque: 1
     multiMana: 1
     multiDegatsCritique: 1
-    bonusPv: 0
+    bonusPv: 10
     bonusDefense: 0
     bonusDegats: 0
     bonusPenetration: 0

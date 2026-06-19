@@ -48,3 +48,54 @@ MonoBehaviour:
     bonusDegatsCritique: 0
     upgradeUltime: 0
     abilities: []
+  - multiPv: 1
+    multiDefense: 1
+    multiDegats: 1
+    multiPenetration: 1
+    multiVitesseAttaque: 1
+    multiMana: 1
+    multiDegatsCritique: 1
+    bonusPv: 0
+    bonusDefense: 0
+    bonusDegats: 0
+    bonusPenetration: 0
+    bonusVitesseAttaque: 0
+    bonusMana: 0
+    bonusChanceCritique: 0
+    bonusDegatsCritique: 0
+    upgradeUltime: 0
+    abilities: []
+  - multiPv: 1
+    multiDefense: 1
+    multiDegats: 1
+    multiPenetration: 1
+    multiVitesseAttaque: 1
+    multiMana: 1
+    multiDegatsCritique: 1
+    bonusPv: 0
+    bonusDefense: 0
+    bonusDegats: 0
+    bonusPenetration: 0
+    bonusVitesseAttaque: 0
+    bonusMana: 0
+    bonusChanceCritique: 0
+    bonusDegatsCritique: 0
+    upgradeUltime: 0
+    abilities: []
+  - multiPv: 1
+    multiDefense: 1
+    multiDegats: 1
+    multiPenetration: 1
+    multiVitesseAttaque: 1
+    multiMana: 1
+    multiDegatsCritique: 1
+    bonusPv: 0
+    bonusDefense: 0
+    bonusDegats: 0
+    bonusPenetration: 0
+    bonusVitesseAttaque: 0
+    bonusMana: 0
+    bonusChanceCritique: 0
+    bonusDegatsCritique: 0
+    upgradeUltime: 0
+    abilities: []
