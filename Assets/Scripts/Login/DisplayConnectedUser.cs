@@ -10,6 +10,7 @@ public class DisplayConnectedUser : MonoBehaviour
 {
     [SerializeField] TMP_Text TextDisplay;
     [SerializeField] GameObject LoginButton;
+    [SerializeField] GameObject DisconnectButton;
 
     async void Start()
     {
@@ -19,6 +20,7 @@ public class DisplayConnectedUser : MonoBehaviour
         {
             Debug.Log("CONNECTÉ");
             LoginButton.SetActive(false);
+            DisconnectButton.SetActive(true);
         }
 
 
