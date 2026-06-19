@@ -1717,7 +1717,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b08db57417a9f714280c6a9de6d6e523, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BoutonHeroUI
-  prefabDuHero: {fileID: 8325371164763598866, guid: 098afccd1e478a642bb2a95cb11d85be, type: 3}
+  prefabDuHero: {fileID: 8325371164763598866, guid: 9b7e0e5150ee8ad40a52484be0ed8213, type: 3}
 --- !u!1 &924158922
 GameObject:
   m_ObjectHideFlags: 0

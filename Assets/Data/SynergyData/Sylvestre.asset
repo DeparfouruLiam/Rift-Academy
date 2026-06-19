@@ -33,7 +33,7 @@ MonoBehaviour:
     abilities: []
   - multiPv: 1
     multiDefense: 1
-    multiDegats: 1.1
+    multiDegats: 1.2
     multiPenetration: 1
     multiVitesseAttaque: 1
     multiMana: 1
