@@ -10,6 +10,7 @@ public class InvocationScript : MonoBehaviour
 {
     public int invocationCount;
     public GameObject ShowcasePanel;
+    public GameObject BasePanel;
     public string bannerHeroes;
     public string PlayerHeroes;
     public string newPlayerHeroes;
@@ -48,6 +49,7 @@ public class InvocationScript : MonoBehaviour
         if(shards >= invocationCount*10)
         {
                 ShowcasePanel.SetActive(true);
+                BasePanel.SetActive(true);
                  snapshot =
                     await db.Collection("Banners")
                             .Document("Banner1")
