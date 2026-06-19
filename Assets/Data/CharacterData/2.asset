@@ -10,13 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2ba36f2062b57ed4e8a481138acb8b2b, type: 3}
-  m_Name: RosougeEpeeman
+  m_Name: 2
   m_EditorClassIdentifier: Assembly-CSharp::CharacterData
   characterName: 
-  synergies: []
+  synergies:
+  - Range
+  - Academie
   pvMax: 100
   defense: 10
-  degats: 0
+  degats: 20
   penetration: 0
   vitesseAttaque: 1
   manaStat: 1

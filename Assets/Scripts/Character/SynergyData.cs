@@ -4,13 +4,8 @@ using System.Collections.Generic;
 [CreateAssetMenu(fileName = "Synergy", menuName = "Gacha/Synergy")]
 public class SynergyData : ScriptableObject
 {
-    public enum SynergyType { Dimension, Classe }
-
-    [Header("Dimension ou Classe")]
+    [Header("Nom de la synergie")]
     public string dimensionOrClassName;
-
-    [Header("Type")]
-    public SynergyType synergyType;
 
     [Header("Paliers (5 niveaux)")]
     public SynergyTier[] tiers;
@@ -31,6 +26,28 @@ public class SynergyData : ScriptableObject
 [System.Serializable]
 public class SynergyTier
 {
-    public SynergyBonus bonus = new SynergyBonus();
+    [Header("Multiplicateurs")]
+    public float multiPv = 1f;
+    public float multiDefense = 1f;
+    public float multiDegats = 1f;
+    public float multiPenetration = 1f;
+    public float multiVitesseAttaque = 1f;
+    public float multiMana = 1f;
+    public float multiDegatsCritique = 1f;
+
+    [Header("Bonus directs")]
+    public float bonusPv = 0f;
+    public float bonusDefense = 0f;
+    public float bonusDegats = 0f;
+    public float bonusPenetration = 0f;
+    public float bonusVitesseAttaque = 0f;
+    public float bonusMana = 0f;
+    public float bonusChanceCritique = 0f;
+    public float bonusDegatsCritique = 0f;
+
+    [Header("Upgrade")]
+    public bool upgradeUltime = false;
+
+    [Header("Abilités")]
     public List<string> abilities = new List<string>();
 }

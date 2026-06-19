@@ -15,8 +15,6 @@ public class CharacterObject : MonoBehaviour
     public float currentChanceCritique;
     public float currentDegatsCritique;
     
-    // Store synergy bonus to ensure it persists
-    private SynergyBonus currentSynergyBonus = new SynergyBonus();
     private bool isInitialized = false;
 
     private void Start()
@@ -43,33 +41,43 @@ public class CharacterObject : MonoBehaviour
         isInitialized = true;
     }
 
-    internal void UpdateStats(SynergyBonus synergyBonus)
-    {
-        if (data == null) return;
-        
-        // Store synergy bonus for persistence
-        currentSynergyBonus = synergyBonus;
-        ApplyStatsWithSynergy();
-    }
-    
-    /// <summary>Apply stats with current synergy bonus. Called after Initialize() to ensure proper application.</summary>
-    private void ApplyStatsWithSynergy()
+    public void ApplyAllTiers(SynergyTier[] tiers)
     {
         if (data == null) return;
 
-        currentPv = (data.pvMax * currentSynergyBonus.multiPv) + currentSynergyBonus.bonusPv;
-        currentDefense = (data.defense * currentSynergyBonus.multiDefense) + currentSynergyBonus.bonusDefense;
-        currentDegats = (data.degats * currentSynergyBonus.multiDegats) + currentSynergyBonus.bonusDegats;
-        currentPenetration = (data.penetration * currentSynergyBonus.multiPenetration) + currentSynergyBonus.bonusPenetration;
-        currentVitesseAttaque = (data.vitesseAttaque * currentSynergyBonus.multiVitesseAttaque) + currentSynergyBonus.bonusVitesseAttaque;
-        currentManaStat = (data.manaStat * currentSynergyBonus.multiMana) + currentSynergyBonus.bonusMana;
-        currentChanceCritique = Mathf.Clamp(data.chanceCritique + currentSynergyBonus.bonusChanceCritique, 0f, 1f);
-        currentDegatsCritique = (data.degatsCritique * currentSynergyBonus.multiDegatsCritique) + currentSynergyBonus.bonusDegatsCritique;
+        float multiPv = 1f, bonusPv = 0f;
+        float multiDefense = 1f, bonusDefense = 0f;
+        float multiDegats = 1f, bonusDegats = 0f;
+        float multiPenetration = 1f, bonusPenetration = 0f;
+        float multiVitesse = 1f, bonusVitesse = 0f;
+        float multiMana = 1f, bonusMana = 0f;
+        float bonusChanceCrit = 0f;
+        float multiDegatsCrit = 1f, bonusDegatsCrit = 0f;
+        bool upgradeUltime = false;
 
-        if (currentSynergyBonus.upgradeUltime)
+        foreach (SynergyTier tier in tiers)
         {
-            
+            multiPv *= tier.multiPv;         bonusPv += tier.bonusPv;
+            multiDefense *= tier.multiDefense; bonusDefense += tier.bonusDefense;
+            multiDegats *= tier.multiDegats;   bonusDegats += tier.bonusDegats;
+            multiPenetration *= tier.multiPenetration; bonusPenetration += tier.bonusPenetration;
+            multiVitesse *= tier.multiVitesseAttaque; bonusVitesse += tier.bonusVitesseAttaque;
+            multiMana *= tier.multiMana;       bonusMana += tier.bonusMana;
+            bonusChanceCrit += tier.bonusChanceCritique;
+            multiDegatsCrit *= tier.multiDegatsCritique; bonusDegatsCrit += tier.bonusDegatsCritique;
+            if (tier.upgradeUltime) upgradeUltime = true;
         }
+
+        currentPv = (data.pvMax * multiPv) + bonusPv;
+        currentDefense = (data.defense * multiDefense) + bonusDefense;
+        currentDegats = (data.degats * multiDegats) + bonusDegats;
+        currentPenetration = (data.penetration * multiPenetration) + bonusPenetration;
+        currentVitesseAttaque = (data.vitesseAttaque * multiVitesse) + bonusVitesse;
+        currentManaStat = (data.manaStat * multiMana) + bonusMana;
+        currentChanceCritique = data.chanceCritique + bonusChanceCrit;
+        currentDegatsCritique = (data.degatsCritique * multiDegatsCrit) + bonusDegatsCrit;
+
+        Debug.Log("[" + data.characterName + "] ApplyAllTiers → dégâts=" + currentDegats + " vitesse=" + currentVitesseAttaque);
     }
 
     public int GetDamageWithCritical()

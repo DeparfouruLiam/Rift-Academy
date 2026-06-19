@@ -7,8 +7,7 @@ public class CharacterData : ScriptableObject
     public string characterName;
 
     [Header("Synergies")]
-    public string dimension;
-    public string classe;
+    public string[] synergies;
 
     [Header("Stats de Combat")]
     public float pvMax = 100f;
