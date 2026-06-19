@@ -19,9 +19,9 @@ MonoBehaviour:
   - Sylvestre
   pvMax: 100
   defense: 0
-  degats: 10
+  degats: 15
   penetration: 0
-  vitesseAttaque: 0.25
+  vitesseAttaque: 3
   manaStat: 1
   chanceCritique: 0.15
   degatsCritique: 1.5

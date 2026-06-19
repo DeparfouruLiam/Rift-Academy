@@ -21,7 +21,7 @@ MonoBehaviour:
   defense: 0
   degats: 10
   penetration: 0
-  vitesseAttaque: 0.3
+  vitesseAttaque: 3
   manaStat: 1
   chanceCritique: 0.15
   degatsCritique: 1.5

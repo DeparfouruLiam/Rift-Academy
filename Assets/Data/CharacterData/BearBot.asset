@@ -18,9 +18,9 @@ MonoBehaviour:
   - Tank
   pvMax: 150
   defense: 0
-  degats: 15
+  degats: 20
   penetration: 0
-  vitesseAttaque: 0.3
+  vitesseAttaque: 2
   manaStat: 1
   chanceCritique: 0.15
   degatsCritique: 1.5

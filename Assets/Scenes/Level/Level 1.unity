@@ -11549,10 +11549,10 @@ MonoBehaviour:
   tempsEntreVagues: 0
   BoutonDebut: {fileID: 1521700024}
   spawnPoints:
-  - {fileID: 1904654618}
+  - {fileID: 155883405}
+  - {fileID: 1786135460}
+  - {fileID: 336884232}
   - {fileID: 111980152}
-  - {fileID: 2010090793}
-  - {fileID: 885127229}
   TargetPoints: []
   target: {fileID: 450297453}
 --- !u!4 &1325002703

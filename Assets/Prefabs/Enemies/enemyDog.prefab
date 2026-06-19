@@ -14,10 +14,10 @@ GameObject:
   - component: {fileID: 7562289304440590967}
   - component: {fileID: 4432893854450774741}
   - component: {fileID: -5032555755919403558}
-  - component: {fileID: -4683839196123826086}
-  - component: {fileID: 7173898734568259891}
+  - component: {fileID: 1613274253330909831}
+  - component: {fileID: -2070869945960587776}
   m_Layer: 6
-  m_Name: enemy2
+  m_Name: enemyDog
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33,7 +33,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.33709, y: 0.33709, z: 0.33709}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -85,14 +85,14 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 68
+  m_SortingOrder: 66
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -8399772541321868063, guid: 5da767dfd4abd084ebf14e83ba4fd7a5, type: 3}
+  m_Sprite: {fileID: 1059913014644421976, guid: c06dd6ef018caa842b670823f9b2e927, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 2.24, y: 1.568}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -110,7 +110,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   target: {x: 0, y: 0, z: 0}
-  speed: 1
+  speed: 2
   SlowEffect: 1
 --- !u!58 &7562289304440590967
 CircleCollider2D:
@@ -189,7 +189,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   HP: 10
   HitEffect: {fileID: 6406750728465449608, guid: 5e23c7807394f3d41926874b7e4a6dd0, type: 3}
---- !u!95 &-4683839196123826086
+--- !u!95 &1613274253330909831
 Animator:
   serializedVersion: 7
   m_ObjectHideFlags: 0
@@ -199,7 +199,7 @@ Animator:
   m_GameObject: {fileID: 7604670548259980914}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 7be5b7ececb4f6044a40fa908447dcaf, type: 2}
+  m_Controller: {fileID: 9100000, guid: 07702670dd94c684199d3140bd2e4c25, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -211,7 +211,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &7173898734568259891
+--- !u!114 &-2070869945960587776
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -223,4 +223,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2a3b85fcf4649d4889d120806927da8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyDamage
-  damage: 25
+  damage: 10

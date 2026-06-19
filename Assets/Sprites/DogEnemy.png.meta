@@ -1,16 +1,16 @@
 fileFormatVersion: 2
-guid: 5da767dfd4abd084ebf14e83ba4fd7a5
+guid: c06dd6ef018caa842b670823f9b2e927
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1344780287051860636
-    second: enemy2_0
+      213: 1059913014644421976
+    second: DogEnemy_0
   - first:
-      213: -8399772541321868063
-    second: enemy2_1
+      213: -6358752284857403326
+    second: DogEnemy_1
   - first:
-      213: -3258914053520618500
-    second: enemy2_2
+      213: 372679707675309926
+    second: DogEnemy_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -55,10 +55,10 @@ TextureImporter:
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 0
-  spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  alignment: 9
+  spritePivot: {x: 0.41130817, y: 0.23515636}
+  spritePixelsToUnits: 250
+  spriteBorder: {x: 132, y: 39, z: 303, w: 583}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -81,7 +81,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -91,19 +91,6 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
     buildTarget: Standalone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -132,23 +119,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: enemy2_1
+      name: DogEnemy_0
       rect:
         serializedVersion: 2
-        x: 190
-        y: 63
-        width: 451
-        height: 500
-      alignment: 9
-      pivot: {x: 0.5, y: 0.45}
+        x: 134
+        y: 33
+        width: 560
+        height: 392
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1ec0e68a0630e6b80800000000000000
-      internalID: -8399772541321868063
+      spriteID: 855b1ba654195be00800000000000000
+      internalID: 1059913014644421976
       vertices: []
       indices: 
       edges: []
@@ -157,8 +144,8 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 05c0edc9cb68c72499c5b877b55d8c80
-    internalID: 0
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 1537655665
     vertices: []
     indices: 
     edges: []
@@ -167,9 +154,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      enemy2_0: 1344780287051860636
-      enemy2_1: -8399772541321868063
-      enemy2_2: -3258914053520618500
+      DogEnemy_0: 1059913014644421976
+      DogEnemy_1: -6358752284857403326
+      DogEnemy_2: 372679707675309926
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

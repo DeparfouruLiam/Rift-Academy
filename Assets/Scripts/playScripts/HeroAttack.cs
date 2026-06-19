@@ -19,7 +19,7 @@ public class HeroAttack : MonoBehaviour
                 anim.SetTrigger("Attack");
             
         }
-        float attackSpeed = characterObject != null ? 1f / characterObject.currentVitesseAttaque : 1f;
+        float attackSpeed = characterObject.currentVitesseAttaque;
         yield return new WaitForSeconds(attackSpeed*AttackSpeedModifier);
         }
     }

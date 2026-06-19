@@ -11649,10 +11649,8 @@ MonoBehaviour:
   BoutonDebut: {fileID: 1141156634}
   spawnPoints:
   - {fileID: 1904654618}
-  - {fileID: 1904654618}
   - {fileID: 519027741}
   - {fileID: 2010090793}
-  - {fileID: 885127229}
   - {fileID: 1253945102}
   TargetPoints: []
   target: {fileID: 450297453}
@@ -12036,10 +12034,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   vagues:
   - nomVague: 1
-    Enemy: {fileID: 7604670548259980914, guid: 5966447f065ce35469dedfd11628e82f, type: 3}
+    Enemy: {fileID: 7604670548259980914, guid: e1e3c0ea5d77dbd498dba986745dde5c, type: 3}
     numberOfEnemy: 10
     Seconds: 1.5
-    pvMultiplicator: 4
+    pvMultiplicator: 2
   tempsEntreVagues: 0
   BoutonDebut: {fileID: 1141156634}
   spawnPoints:
