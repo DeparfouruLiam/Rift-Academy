@@ -9,6 +9,7 @@ public class OpenHeroView : MonoBehaviour
      public GameObject mainPanel ;
      public HeroScript hero;
      public HeroCanvaComponents heroComponents;
+     public int heroid;
     public void OpenHeroViewClick()
     {
         heroPanel.SetActive(true);
@@ -18,15 +19,17 @@ public class OpenHeroView : MonoBehaviour
         // SceneManager.LoadScene(TargetScene);
         CustomizeHeroView();
     }
-    public void Setup(GameObject tmphero, GameObject all, HeroScript tmpheroscript)
+    public void Setup(GameObject tmphero, GameObject all, HeroScript tmpheroscript, int id)
     {
         heroPanel = tmphero;
         mainPanel = all;
         hero = tmpheroscript;
+        heroid = id;
     }
 
     public void CustomizeHeroView()
     {
+        heroComponents = new HeroCanvaComponents();
         heroComponents = heroPanel.GetComponent<HeroCanvaComponents>();
         heroComponents.constellation.GetComponentInChildren<Text>().text = "Tier " + hero.constellation.ToString();
         heroComponents.heroName.GetComponentInChildren<Text>().text =  hero.heroName.ToString()  ;
@@ -35,7 +38,7 @@ public class OpenHeroView : MonoBehaviour
         heroComponents.lck.GetComponentInChildren<Text>().text = hero.lck.ToString()+" Lck " ;
         heroComponents.type.GetComponentInChildren<Text>().text = hero.type.ToString()+" Type " ;
         heroComponents.vit.GetComponentInChildren<Text>().text =  hero.vit.ToString()+" Vit " ;
-        heroComponents.icon.GetComponentInChildren<Image>().sprite = hero.icon;
+        heroComponents.icon.GetComponentInChildren<Image>().sprite = Resources.Load<Sprite>("Roaster/Hero" + (heroid).ToString("D2")  );
     }
 
     
