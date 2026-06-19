@@ -15,7 +15,7 @@ public class Roaster : MonoBehaviour
     public GameObject heroPanel ;
     public GameObject mainPanel ;
     string strHeroes ;
-
+    public GameObject panelHerosolo;
     async void Start()
     {          
           FirebaseFirestore db = FirebaseFirestore.DefaultInstance;
@@ -63,7 +63,7 @@ public class Roaster : MonoBehaviour
 
         InitiateConstellations();
         heroPanel.SetActive(false);
-        Debug.Log("Roaster initialized");
+         Debug.Log("Roaster initialized");
     }
 
     public void InitiateConstellations()
@@ -89,7 +89,7 @@ public class Roaster : MonoBehaviour
                 GameObject newHero = Instantiate(heroPrefab, panel.transform);
                 newHero.GetComponent<HeroUI>().Setup(Heroes[i], heroIcons[i]);
                 newHero.GetComponent<HeroScript>().Setup(Heroes[i], heroIcons[i]);
-                newHero.GetComponent<OpenHeroView>().Setup(heroPanel, mainPanel, newHero.GetComponent<HeroScript>(),i);
+                newHero.GetComponent<OpenHeroView>().Setup(panelHerosolo, mainPanel, newHero.GetComponent<HeroScript>(),i,heroPanel);
             }
         }
     }
