@@ -20,34 +20,36 @@ public class HeroHitbox : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (ProjectileScript != null)
-        {
-            Debug.Log(ProjectileScript.target);
-            if (ProjectileScript.target != null)
+        if ((enemyLayer.value & (1 << collision.gameObject.layer)) != 0){
+            if (ProjectileScript != null)
             {
                 Debug.Log(ProjectileScript.target);
                 if (ProjectileScript.target != null)
                 {
-                    ProjectileScript.UpdateTarget();
+                    Debug.Log(ProjectileScript.target);
+                    if (ProjectileScript.target != null)
+                    {
+                        ProjectileScript.UpdateTarget();
+                    }
+                    if (ProjectileScript.Pierce<1)
+                    {
+                        ProjectileScript.LastHit();
+                    }
+                    ProjectileScript.Pierce -=1;
                 }
-                if (ProjectileScript.Pierce<1)
+                if (ProjectileScript.Pierce < 1)
                 {
                     ProjectileScript.LastHit();
                 }
-                ProjectileScript.Pierce -=1;
+                ProjectileScript.Pierce -= 1;
             }
-            if (ProjectileScript.Pierce < 1)
-            {
-                ProjectileScript.LastHit();
-            }
-            ProjectileScript.Pierce -= 1;
-        }
 
-        int damage = characterObject != null ? characterObject.GetDamageWithCritical() : 0;
-        Health targetHealth = collision.GetComponent<Health>();
-        if (targetHealth != null)
-        {
-            targetHealth.IsHit(damage);
+            int damage = characterObject != null ? characterObject.GetDamageWithCritical() : 0;
+            Health targetHealth = collision.GetComponent<Health>();
+            if (targetHealth != null)
+            {
+                targetHealth.IsHit(damage);
+            }
         }
     }
 }
