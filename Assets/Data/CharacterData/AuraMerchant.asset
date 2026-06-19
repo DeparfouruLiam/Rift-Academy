@@ -10,17 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2ba36f2062b57ed4e8a481138acb8b2b, type: 3}
-  m_Name: RosougeEpeeman
+  m_Name: AuraMerchant
   m_EditorClassIdentifier: Assembly-CSharp::CharacterData
-  characterName: RosougeEpeeman
+  characterName: AuraMerchant
   synergies:
-  - melee
-  - Academie
-  pvMax: 40
+  - DarkFantasy
+  - Support
+  - Support
+  pvMax: 80
   defense: 0
-  degats: 5
+  degats: 10
   penetration: 0
-  vitesseAttaque: 1
+  vitesseAttaque: 0.3
   manaStat: 1
   chanceCritique: 0.15
   degatsCritique: 1.5

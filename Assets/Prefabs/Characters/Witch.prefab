@@ -106,7 +106,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7df4da40bf49425468a85b2e4ca04d27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  Damage: 10
   enemyLayer:
     serializedVersion: 2
     m_Bits: 0
@@ -380,7 +379,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7df4da40bf49425468a85b2e4ca04d27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HeroHitbox
-  Damage: 100
   enemyLayer:
     serializedVersion: 2
     m_Bits: 0
@@ -473,6 +471,8 @@ GameObject:
   - component: {fileID: 5564071936781535220}
   - component: {fileID: 2898705719670308941}
   - component: {fileID: 8487044415252384949}
+  - component: {fileID: 6444950405046353239}
+  - component: {fileID: -7116276394185633433}
   m_Layer: 14
   m_Name: Witch
   m_TagString: Untagged
@@ -569,7 +569,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14f40a1960a807f4f9f5aa9ec6ea870c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  AttackSpeed: 1.5
   ultimateUp: 0
   AttackSpeedModifier: 1
 --- !u!95 &1780637359065804012
@@ -676,3 +675,38 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Ultimate
   ultimateDuration: 5
+--- !u!114 &6444950405046353239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8325371164763598866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7bc3f6adae61a249943441e2e491ac7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterObject
+  data: {fileID: 11400000, guid: 76396bc6d7342ab4a936d6bb715324fc, type: 2}
+  currentPv: 0
+  currentDefense: 0
+  currentDegats: 0
+  currentPenetration: 0
+  currentVitesseAttaque: 0
+  currentManaStat: 0
+  currentChanceCritique: 0
+  currentDegatsCritique: 0
+--- !u!114 &-7116276394185633433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8325371164763598866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67dfe713d4ed0f64381c2b3c17fb725e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::heroHp
+  heroHealth: 0
+  savedAttackSpeedBeforeDeath: 0

@@ -13,9 +13,8 @@ MonoBehaviour:
   m_Name: Tank
   m_EditorClassIdentifier: Assembly-CSharp::SynergyData
   dimensionOrClassName: Tank
-  synergyType: 0
   tiers:
-  - multiPv: 1
+  - multiPv: 0.15
     multiDefense: 1
     multiDegats: 1
     multiPenetration: 1

@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: DarkFantasy
   m_EditorClassIdentifier: Assembly-CSharp::SynergyData
   dimensionOrClassName: DarkFantasy
-  synergyType: 0
   tiers:
   - multiPv: 1
     multiDefense: 1
@@ -46,7 +45,7 @@ MonoBehaviour:
     bonusVitesseAttaque: 0
     bonusMana: 0
     bonusChanceCritique: 0
-    bonusDegatsCritique: 0
+    bonusDegatsCritique: 0.25
     upgradeUltime: 0
     abilities: []
   - multiPv: 1
@@ -63,7 +62,7 @@ MonoBehaviour:
     bonusVitesseAttaque: 0
     bonusMana: 0
     bonusChanceCritique: 0
-    bonusDegatsCritique: 0
+    bonusDegatsCritique: 0.5
     upgradeUltime: 0
     abilities: []
   - multiPv: 1

@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: Range
   m_EditorClassIdentifier: Assembly-CSharp::SynergyData
   dimensionOrClassName: Range
-  synergyType: 0
   tiers:
   - multiPv: 1
     multiDefense: 1
@@ -43,9 +42,9 @@ MonoBehaviour:
     bonusDefense: 0
     bonusDegats: 0
     bonusPenetration: 0
-    bonusVitesseAttaque: 100000
+    bonusVitesseAttaque: 0
     bonusMana: 0
-    bonusChanceCritique: 0
+    bonusChanceCritique: 0.07
     bonusDegatsCritique: 0
     upgradeUltime: 0
     abilities: []

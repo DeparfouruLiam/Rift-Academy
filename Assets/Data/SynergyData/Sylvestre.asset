@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: Sylvestre
   m_EditorClassIdentifier: Assembly-CSharp::SynergyData
   dimensionOrClassName: Sylvestre
-  synergyType: 0
   tiers:
   - multiPv: 1
     multiDefense: 1
@@ -34,7 +33,7 @@ MonoBehaviour:
     abilities: []
   - multiPv: 1
     multiDefense: 1
-    multiDegats: 1
+    multiDegats: 1.1
     multiPenetration: 1
     multiVitesseAttaque: 1
     multiMana: 1
