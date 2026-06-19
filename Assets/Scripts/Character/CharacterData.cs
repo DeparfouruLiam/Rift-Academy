@@ -7,8 +7,7 @@ public class CharacterData : ScriptableObject
     public string characterName;
 
     [Header("Synergies")]
-    public string dimension;
-    public string classe;
+    public string[] synergies;
 
     [Header("Stats de Combat")]
     public float pvMax = 100f;
@@ -19,7 +18,7 @@ public class CharacterData : ScriptableObject
     public float manaStat = 1f; 
     
     [Header("Critiques")]
-    [Range(0, 1)] public float chanceCritique = 0.1f;
+    public float chanceCritique = 0.1f;
     public float degatsCritique = 1.5f;
 
     [Header("Visuel")]

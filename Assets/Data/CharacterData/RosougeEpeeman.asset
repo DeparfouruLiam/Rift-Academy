@@ -10,14 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2ba36f2062b57ed4e8a481138acb8b2b, type: 3}
-  m_Name: NouveauPerso
+  m_Name: RosougeEpeeman
   m_EditorClassIdentifier: Assembly-CSharp::CharacterData
-  characterName: dd
-  dimension: Dark
-  classe: Mage
+  characterName: 
+  synergies: []
   pvMax: 100
   defense: 10
-  degats: 20
+  degats: 0
   penetration: 0
   vitesseAttaque: 1
   manaStat: 1
