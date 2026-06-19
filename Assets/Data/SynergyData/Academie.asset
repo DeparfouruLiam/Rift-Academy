@@ -1,0 +1,101 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9eb978d1e8b80814abf38f06353867c8, type: 3}
+  m_Name: Academie
+  m_EditorClassIdentifier: Assembly-CSharp::SynergyData
+  dimensionOrClassName: Academie
+  tiers:
+  - multiPv: 1
+    multiDefense: 1
+    multiDegats: 1
+    multiPenetration: 1
+    multiVitesseAttaque: 1
+    multiMana: 1
+    multiDegatsCritique: 1
+    bonusPv: 0
+    bonusDefense: 0
+    bonusDegats: 0
+    bonusPenetration: 0
+    bonusVitesseAttaque: 0
+    bonusMana: 0
+    bonusChanceCritique: 0
+    bonusDegatsCritique: 0
+    upgradeUltime: 0
+    abilities: []
+  - multiPv: 1
+    multiDefense: 1
+    multiDegats: 1
+    multiPenetration: 1
+    multiVitesseAttaque: 1.2
+    multiMana: 1
+    multiDegatsCritique: 1
+    bonusPv: 0
+    bonusDefense: 0
+    bonusDegats: 0
+    bonusPenetration: 0
+    bonusVitesseAttaque: 0
+    bonusMana: 0
+    bonusChanceCritique: 0
+    bonusDegatsCritique: 0
+    upgradeUltime: 0
+    abilities: []
+  - multiPv: 1
+    multiDefense: 1
+    multiDegats: 1
+    multiPenetration: 1
+    multiVitesseAttaque: 1
+    multiMana: 1
+    multiDegatsCritique: 1
+    bonusPv: 0
+    bonusDefense: 0
+    bonusDegats: 0
+    bonusPenetration: 0
+    bonusVitesseAttaque: 0
+    bonusMana: 0
+    bonusChanceCritique: 0
+    bonusDegatsCritique: 0
+    upgradeUltime: 0
+    abilities: []
+  - multiPv: 1
+    multiDefense: 1
+    multiDegats: 1
+    multiPenetration: 1
+    multiVitesseAttaque: 1
+    multiMana: 1
+    multiDegatsCritique: 1
+    bonusPv: 0
+    bonusDefense: 0
+    bonusDegats: 0
+    bonusPenetration: 0
+    bonusVitesseAttaque: 0
+    bonusMana: 0
+    bonusChanceCritique: 0
+    bonusDegatsCritique: 0
+    upgradeUltime: 0
+    abilities: []
+  - multiPv: 1
+    multiDefense: 1
+    multiDegats: 1
+    multiPenetration: 1
+    multiVitesseAttaque: 1
+    multiMana: 1
+    multiDegatsCritique: 1
+    bonusPv: 0
+    bonusDefense: 0
+    bonusDegats: 0
+    bonusPenetration: 0
+    bonusVitesseAttaque: 0
+    bonusMana: 0
+    bonusChanceCritique: 0
+    bonusDegatsCritique: 0
+    upgradeUltime: 0
+    abilities: []

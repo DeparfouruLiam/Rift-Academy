@@ -15,7 +15,7 @@ public class BuffHitbox : MonoBehaviour
         if (hero == null)
             return;
 
-        if (hero.AttackSpeed > BuffLevel)
+        if (hero.AttackSpeedModifier > BuffLevel)
         {
             var BuffValues = GetComponentInParent<BuffZoneScript>();
             hero.AttSpeBuff(BuffLevel, BuffValues.BuffDuration - (Time.time - BuffValues.BuffStartTime));

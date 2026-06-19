@@ -3,25 +3,24 @@ using UnityEngine;
 
 public class HeroAttack : MonoBehaviour
 {
-    [SerializeField] public float AttackSpeed;
-
-    public bool ultimateUp = false;
+     public bool ultimateUp = false;
     private Animator anim;
     public float AttackSpeedModifier = 1;
     private Coroutine AttSpeedCoroutine;
+    private CharacterObject characterObject;
 
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     IEnumerator Start()
     {
         anim = gameObject.GetComponent<Animator>();
+        characterObject = gameObject.GetComponent<CharacterObject>();
         while (true)
         {
             if (gameObject.GetComponent<DragDrop2D>().onCase){
                 anim.SetTrigger("Attack");
             
         }
-        yield return new WaitForSeconds(AttackSpeed*AttackSpeedModifier);
+        float attackSpeed = characterObject != null ? 1f / characterObject.currentVitesseAttaque : 1f;
+        yield return new WaitForSeconds(attackSpeed*AttackSpeedModifier);
         }
     }
 

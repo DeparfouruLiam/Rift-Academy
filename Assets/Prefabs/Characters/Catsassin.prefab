@@ -106,7 +106,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7df4da40bf49425468a85b2e4ca04d27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  Damage: 10
   enemyLayer:
     serializedVersion: 2
     m_Bits: 0
@@ -323,6 +322,8 @@ GameObject:
   - component: {fileID: 5564071936781535220}
   - component: {fileID: 8479643142755379768}
   - component: {fileID: 3748419057738598398}
+  - component: {fileID: 6031019796212950120}
+  - component: {fileID: 5843029913046801879}
   m_Layer: 14
   m_Name: Catsassin
   m_TagString: Untagged
@@ -418,7 +419,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14f40a1960a807f4f9f5aa9ec6ea870c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  AttackSpeed: 1
   ultimateUp: 0
   AttackSpeedModifier: 1
 --- !u!95 &1780637359065804012
@@ -525,6 +525,41 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Ultimate
   ultimateDuration: 7
+--- !u!114 &6031019796212950120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8325371164763598866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7bc3f6adae61a249943441e2e491ac7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterObject
+  data: {fileID: 11400000, guid: e33ade6789cfae340bf6421fa388d8da, type: 2}
+  currentPv: 0
+  currentDefense: 0
+  currentDegats: 0
+  currentPenetration: 0
+  currentVitesseAttaque: 0
+  currentManaStat: 0
+  currentChanceCritique: 0
+  currentDegatsCritique: 0
+--- !u!114 &5843029913046801879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8325371164763598866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67dfe713d4ed0f64381c2b3c17fb725e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::heroHp
+  heroHealth: 0
+  savedAttackSpeedBeforeDeath: 0
 --- !u!1 &8388245461850327070
 GameObject:
   m_ObjectHideFlags: 0

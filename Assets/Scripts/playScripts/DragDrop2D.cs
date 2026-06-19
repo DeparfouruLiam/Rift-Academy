@@ -77,6 +77,10 @@ public class DragDrop2D : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDr
             }
 
         col.enabled = true;
+
+        SynergyManager synergyManager = FindAnyObjectByType<SynergyManager>();
+        if (synergyManager != null)
+            synergyManager.ApplySynergies();
     }
 
     Vector3 GetWorldPosition(Vector2 screenPoint)
